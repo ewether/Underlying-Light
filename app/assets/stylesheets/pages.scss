@@ -6,62 +6,50 @@
 // padding & margin: use em
 // widths: em or %
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
+// header {
+//   background-color: rgba(0,0,0,0.7);
+//   display: flex;
+//   position: relative;
+// }
 
 nav {
-  text-align: center;
-  // text-transform: uppercase;
-  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8em;
+  background-color: rgba(0,0,0,0.7);
 }
 
 .nav-links {
-  list-style-type: none;
-  background-color: rgba(0,0,0,0.7);
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  position: absolute;
-  align-items: center;
-  right: 0px;
-  height: 80%;
-  top: 0px;
   width: 50%;
-  transform: translateX(100%);
+  li {
+    list-style-type: none;
+  }
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
-  // opacity: 0;
-}
-
-.nav-links li {
-  // margin-top: 1em;
-  // margin-bottom: 1.5em;
-}
-
-.nav-links a:hover {
-  color: #cccccc;
-}
-
-.burger {
-  display: block;
+  letter-spacing: 2px;
 }
 
 .burger div {
   width: 25px;
   height: 3px;
-  margin: 5px;
   background-color: white;
+  margin: 5px;
+}
+
+.burger {
+  display: none;
 }
 
 .container {
@@ -70,7 +58,6 @@ nav {
   top: 0;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
 }
 
 .background {
@@ -83,22 +70,58 @@ nav {
 }
 
 .logo {
-  height: 150px;
+  height: 10em;
 }
 
-@media screen and (min-width:1024px){
-
+.nav-active {
+  transform: translateX(0%);
 }
 
-@media screen and (min-width:768px){
-  body {
-    // display: none;
+@media screen and (max-width:1024px) {
+  .nav-links {
+
   }
 }
 
+@media screen and (max-width:768px) {
+  .container {
+    overflow-x: hidden;
+  }
 
+  nav {
+    height: 11em;
+  }
 
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 11em;
+    background-color: rgba(0,0,0,0.7);
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
 
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    margin-left: 22em;
+    margin-top: 8em;
+    cursor: pointer;
+  }
+
+  .logo {
+    height: 8.5em;
+    position: absolute;
+  }
+}
 
 
 
