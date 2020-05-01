@@ -3,5 +3,6 @@ Rails.application.routes.draw do
  root to: 'pages#home'
  get 'home/index'
  get 'about', to: 'pages#about'
+ get 'pricing', to: 'pages#pricing'
  get 'contact', to: 'pages#contact'
 end
