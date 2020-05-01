@@ -15,12 +15,6 @@
   letter-spacing: 2px;
 }
 
-// header {
-//   background-color: rgba(0,0,0,0.7);
-//   display: flex;
-//   position: relative;
-// }
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -166,7 +160,6 @@ section {
   background-color: rgba(255,255,255,0.56);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -182,12 +175,10 @@ section {
 .main-section h1 {
   font-size: 1.6rem;
   text-align: center;
-  // padding-top: 1em;
   font-weight: 400;
 }
 
 .main-section p {
-  // margin-top: 1.4em;
   height: 4em;
   width: 18em;
   font-size: 1.1rem;
@@ -198,7 +189,6 @@ section {
 }
 
 .contact-icons {
-  width: 20em;
   height: 10em;
   margin-bottom: 2.3em;
 }
