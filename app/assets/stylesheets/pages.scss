@@ -18,8 +18,8 @@
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  min-height: 8em;
+  // align-items: center;
+  min-height: 6em;
   background-color: rgba(0,0,0,0.65);
 }
 
@@ -38,6 +38,14 @@ nav {
   letter-spacing: 3px;
   font-size: 1.1em;
   font-weight: 400;
+}
+
+.active, .btn:hover {
+  color: black;
+}
+
+#home-active {
+  color: #ababab;
 }
 
 .burger div {
@@ -68,10 +76,6 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.logo {
-  height: 10em;
 }
 
 .nav-active {
@@ -114,13 +118,15 @@ nav {
   .burger {
     display: block;
     margin-left: 22em;
-    margin-top: 8em;
+    margin-top: 8.5em;
     cursor: pointer;
   }
 
   .logo {
     height: 9.2em;
     position: absolute;
+    margin-left: 4.7em;
+    margin-top: 1em;
   }
 
 }
@@ -210,6 +216,7 @@ section {
   width: 16em;
   cursor: pointer;
 }
+
 
 
 

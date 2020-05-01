@@ -22,6 +22,11 @@ function navSlide () {
     burger.classList.toggle('toggle');
 
   });
+
+  // navLinks.addEventListener('click', function () {
+  //   nav.classList.add()
+  // });
+
 }
 
 navSlide();

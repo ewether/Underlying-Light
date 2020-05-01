@@ -7,11 +7,30 @@
   letter-spacing: 2px;
 }
 
-.page-nav {
-  height: 4em;
+.page-logo {
+  height: 4.5em;
+  position: absolute;
+  margin-left: 10.3em;
+  margin-top: .7em;
 }
 
-.page-logo {
-  height: 4em;
-  position: absolute;
+#page-nav {
+  height: 6em;
+}
+
+#about-active {
+  color: #ababab;
+}
+
+#page-nav-links {
+  margin-top: -5em;
+  height: 40em;
+}
+
+#page-burger {
+  margin-top: 3.7em;
+}
+
+@media screen and (max-width: 768px) {
+
 }
