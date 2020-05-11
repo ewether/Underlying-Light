@@ -60,7 +60,8 @@ nav {
 }
 
 #home-active {
-  color: #a5d1cf;
+  // color: #a5d1cf;
+  border-bottom: .5px solid white;
 }
 
 .logo {
@@ -280,7 +281,8 @@ footer {
     background-color: transparent;
     li {
       opacity: 1;
-      padding-left: 9em;
+      padding-left: 4em;
+      line-height: 6em;
     }
     a {
       font-size: 1em;
@@ -288,7 +290,8 @@ footer {
   }
 
   .nav-links a:hover {
-    color: #a5d1cf;
+    // color: #a5d1cf;
+    border-bottom: 1px solid white;
   }
 
   .background {
@@ -332,17 +335,16 @@ footer {
 
   .book-btn {
     color: white;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.3);
     border: 2px solid white;
     font-weight: 400;
-    // border-color: transparent;
     letter-spacing: 2px;
     width: 16em;
     height: 2.8em;
   }
 
   .book-btn:hover {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(0,0,0,0.4);
   }
 
   .home-section {
