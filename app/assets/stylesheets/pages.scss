@@ -60,7 +60,7 @@ nav {
 }
 
 #home-active {
-  color: #c1c6c9;
+  color: #a5d1cf;
 }
 
 .logo {
@@ -284,7 +284,7 @@ nav {
   }
 
   .nav-links a:hover {
-    color: #c1c6c9;
+    color: #a5d1cf;
   }
 
   .background {
@@ -328,15 +328,16 @@ nav {
 
   .book-btn {
     color: black;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.99);
     font-weight: 300;
     border-color: transparent;
+    letter-spacing: 2px;
     width: 16em;
     height: 2.8em;
   }
 
   .book-btn:hover {
-    background-color: rgba(255,255,255,0.76);
+    background-color: rgba(255,255,255,0.9);
   }
 
   .home-section {
@@ -412,7 +413,8 @@ nav {
   .card-btn {
     border-radius: 4px;
     border-color: transparent;
-    background-color: rgba(255,255,255,0.9);
+    // background-color: #c8e6e1;
+    background-color: rgba(255,255,255,0.98);
     letter-spacing: 2px;
     margin-bottom: .5em;
     font-weight: 400;
@@ -422,7 +424,7 @@ nav {
   }
 
   .card-btn:hover {
-    background-color: rgba(255,255,255,0.82);
+    background-color: rgba(255,255,255,0.9);
     cursor: pointer;
   }
 }
