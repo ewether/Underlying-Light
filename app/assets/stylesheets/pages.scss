@@ -60,7 +60,7 @@ nav {
 }
 
 #home-active {
-  color: #c1c6c9;
+  color: #a5d1cf;
 }
 
 .logo {
@@ -221,6 +221,10 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+footer {
+  display: none;
+}
+
 
 // laptop screen
 @media screen and (min-width:1024px) {
@@ -284,7 +288,7 @@ nav {
   }
 
   .nav-links a:hover {
-    color: #c1c6c9;
+    color: #a5d1cf;
   }
 
   .background {
@@ -328,15 +332,16 @@ nav {
 
   .book-btn {
     color: black;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.99);
     font-weight: 300;
     border-color: transparent;
+    letter-spacing: 2px;
     width: 16em;
     height: 2.8em;
   }
 
   .book-btn:hover {
-    background-color: rgba(255,255,255,0.76);
+    background-color: rgba(255,255,255,0.9);
   }
 
   .home-section {
@@ -412,7 +417,8 @@ nav {
   .card-btn {
     border-radius: 4px;
     border-color: transparent;
-    background-color: rgba(255,255,255,0.9);
+    // background-color: #c8e6e1;
+    background-color: rgba(255,255,255,0.98);
     letter-spacing: 2px;
     margin-bottom: .5em;
     font-weight: 400;
@@ -422,8 +428,56 @@ nav {
   }
 
   .card-btn:hover {
-    background-color: rgba(255,255,255,0.82);
+    background-color: rgba(255,255,255,0.9);
     cursor: pointer;
+  }
+
+  .home-contact {
+    display: none;
+  }
+
+  footer {
+    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
+    background-color: rgba(0,0,0,0.65);
+    height: 14em;
+    display: block;
+    color: white;
+  }
+
+  .footer {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 26em;
+  }
+
+  .footer-contact {
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+  }
+
+  .footer-links {
+    line-height: 1.5em;
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .footer-links a:hover {
+    color: #a5d1cf;
+  }
+
+  .copyright {
+    padding-top: 2em;
+    margin-left: 70%;
+    position: absolute;
   }
 }
 
