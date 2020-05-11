@@ -60,7 +60,9 @@ nav {
 }
 
 #home-active {
-  color: #a5d1cf;
+  // color: #a5d1cf;
+  border-bottom: 1px solid white;
+  padding-bottom: .5em;
 }
 
 .logo {
@@ -247,7 +249,7 @@ footer {
   }
 
   .background {
-    background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
+    background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(25, 25, 25, 0.1), rgba(26, 26, 26, 0.4)), url(massage.jpg);
   }
 
   .main-section {
@@ -280,15 +282,24 @@ footer {
     background-color: transparent;
     li {
       opacity: 1;
-      padding-left: 9em;
+      padding-left: 4em;
+      line-height: 6em;
+      transform: scale(1);
+      transition: .1s ease-in-out;
     }
     a {
       font-size: 1em;
+      padding-bottom: .5em;
     }
   }
 
   .nav-links a:hover {
-    color: #a5d1cf;
+    // color: #a5d1cf;
+    border-bottom: 1px solid white;
+  }
+
+  .nav-links li:hover {
+    transform: scale(1.01);
   }
 
   .background {
@@ -310,10 +321,11 @@ footer {
   .name-logo {
     font-family: 'Averia Serif Libre', cursive;
     color: white;
-    margin-left: -.7em;
+    margin-left: -.55em;
     display: flex;
     width: 16em;
     align-self: center;
+    text-decoration: none;
   }
 
   #laptop-logo {
@@ -331,17 +343,20 @@ footer {
   }
 
   .book-btn {
-    color: black;
-    background-color: rgba(255,255,255,0.99);
-    font-weight: 300;
-    border-color: transparent;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid white;
+    font-weight: 400;
     letter-spacing: 2px;
     width: 16em;
     height: 2.8em;
+    transform: scale(1);
+    transition: .1s ease-in-out;
   }
 
   .book-btn:hover {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(0,0,0,0.4);
+    transform: scale(1.01);
   }
 
   .home-section {
@@ -412,24 +427,33 @@ footer {
   .card-img {
     width: 22em;
     border-radius: 4px;
+    margin-top: .25em;
+    margin-bottom: .25em;
+  }
+
+  .card-two p {
+    // margin-bottom: 1.2em;
   }
 
   .card-btn {
     border-radius: 4px;
     border-color: transparent;
     // background-color: #c8e6e1;
-    background-color: rgba(255,255,255,0.98);
+    background-color: rgba(255,255,255,0.9);
     letter-spacing: 2px;
     margin-bottom: .5em;
     font-weight: 400;
     font-size: 1em;
     height: 3em;
     width: 16em;
+    transform: scale(1);
+    transition: .1s ease-in-out;
   }
 
   .card-btn:hover {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.95);
     cursor: pointer;
+    transform: scale(1.02);
   }
 
   .home-contact {
@@ -437,8 +461,10 @@ footer {
   }
 
   footer {
+    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(https://images.unsplash.com/photo-1531303511320-729cbf66254f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2964&q=80);
+    // background-size: cover;
     // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,.9);
     height: 14em;
     display: block;
     color: white;
@@ -449,7 +475,7 @@ footer {
     // flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 26em;
+    padding: 3em 26em;
   }
 
   .footer-contact {
@@ -475,7 +501,7 @@ footer {
   }
 
   .copyright {
-    padding-top: 2em;
+    padding-top: .2em;
     margin-left: 70%;
     position: absolute;
   }
