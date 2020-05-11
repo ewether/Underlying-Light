@@ -1,5 +1,6 @@
 #pricing-active {
-  color: #c1c6c9;
+  border-bottom: 1px solid white;
+  padding-bottom: .5em;
 }
 
 #pricing-section {
@@ -36,12 +37,13 @@
   justify-content: space-between;
 }
 
-hr {
+.pricing-linebreak {
     display: block;
-    height: .1px;
     border: 0;
     border-top: 1px solid black;
     margin-top: 1.5em;
+    margin-right: .5em;
+    margin-left: .5em;
     padding: 0;
 }
 
@@ -73,10 +75,14 @@ input {
   border-radius: 4px;
   color: white;
   overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0,0,0,0.2);
-  margin-right: 2.5em;
-  margin-left: 1.5em;
-  margin-top: -16.5em;
+  // box-shadow: 0 4px 4px -2px rgba(0,0,0,0.2);
+  margin-top: 1.5em;
+  width: 20em;
+}
+
+#tab1 {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .tab {
@@ -136,8 +142,24 @@ input:checked {
 
 @media screen and (min-width: 1024px) {
   #pricing-section {
-    width: 85em;
+    width: 45em;
+    margin: 0 auto;
+    margin-top: 4em;
+  }
 
+  .pricing-linebreak {
+    width: 42em;
+    margin-top: 1.5em;
+    // margin-bottom: 2em;
+    margin-left: 1.5em;
+    border: .5px solid black;
+  }
+
+  #tabs {
+    width: 44em;
+    margin-top: 1.5em;
+    padding-right: 1em;
+    align-self: center;
   }
 }
 

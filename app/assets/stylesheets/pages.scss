@@ -72,7 +72,7 @@ nav {
   margin-top: 1em;
 }
 
-.name-logo {
+#name-logo {
   display: none;
 }
 
@@ -271,9 +271,7 @@ footer {
   .nav-links {
     width: 100%;
     height: 4em;
-    // font-size: .9em;
     margin-right: 7em;
-    // padding-top: .5em;
     align-self: center;
     justify-content: flex-end;
     flex-direction: row;
@@ -318,8 +316,8 @@ footer {
     margin-bottom: .7em;
   }
 
-  .name-logo {
-    font-family: 'Averia Serif Libre', cursive;
+  #name-logo {
+    font-family: 'Averia Serif Libre';
     color: white;
     margin-left: -.55em;
     display: flex;
@@ -335,7 +333,7 @@ footer {
 
   .heading-two {
     display: block;
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Averia Serif Libre';
     margin-top: .25em;
     font-size: 1.25em;
     letter-spacing: 3px;
@@ -461,8 +459,6 @@ footer {
   }
 
   footer {
-    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(https://images.unsplash.com/photo-1531303511320-729cbf66254f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2964&q=80);
-    // background-size: cover;
     // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
     background-color: rgba(0,0,0,.9);
     height: 14em;
@@ -472,7 +468,6 @@ footer {
 
   .footer {
     display: flex;
-    // flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 3em 26em;
@@ -482,7 +477,6 @@ footer {
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
-    // text-align: center;
   }
 
   .footer-links {
