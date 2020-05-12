@@ -46,11 +46,16 @@
 }
 
 @media screen and (min-width: 1024px) {
+  #contact-background {
+    height: 62em;
+  }
+
   #contact-section {
     width: 45em;
     height: 50em;
     margin: 0 auto;
     margin-top: 4em;
+    margin-bottom: 2em;
   }
 
   #contact-icons {
