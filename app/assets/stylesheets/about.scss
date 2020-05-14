@@ -53,7 +53,7 @@
   font-weight: 400;
 }
 
-#about-p {
+.about p {
   width: 18em;
   font-size: 1.1rem;
   // position: absolute;
@@ -61,9 +61,19 @@
   margin-top: 2em;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    width: 40em;
+  }
+
+  .about-aside {
+    width: 18em;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   #about-background {
-    height: 51em;
+    height: 62em;
   }
 
   #page-logo {
@@ -88,14 +98,103 @@
 
   #page-nav-links {
     margin-top: 0em;
+    height: 6em;
   }
 
   #about-section {
-    width: 45em;
-    height: 37em;
+    background-color: transparent;
+    // margin: 0 auto;
+    width: 95em;
+    margin-top: 2em;
+    margin-bottom: 7em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about {
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.56);
+    width: 80%;
+    height: 40em;
+    text-align: -webkit-center;
+    p {
+      width: 36em;
+      line-height: 1.5em;
+    }
+  }
+
+  .about-aside {
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.56);
+    width: 22%;
+    height: 40em;
+    margin-left: 2em;
+    margin-right: 10em;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style-type: none;
+    }
+    h3 {
+      font-weight: 400;
+      line-height: 2em;
+    }
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    margin-top: 4em;
-    margin-bottom: 1em;
+    // margin-top: 3.2em;
+    margin-bottom: 18em;
+    justify-content: space-between;
+    line-height: 2em;
+  }
+
+  .about-location {
+    margin-top: 3em;
+    padding-top: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-top: 1px solid black;
+  }
+
+  .about-services {
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
+
+  #about-pricing {
+    width: 14em;
+    font-size: 1em;
+    margin-top: 0em;
+    margin-left: 2em;
+    line-height: 2em;
+    p {
+    font-weight: 300;
+    }
+  }
+
+  #about-btn {
+    margin-top: 2em;
+    margin-bottom: -1em;
+    height: 3em;
+    width: 15em;
+    background-color: rgba(0,0,0,0.78);
+    color: white;
+  }
+
+  #about-btn:hover {
+    background-color: rgba(0,0,0,0.75);
+  }
+
+  .about-border {
+    margin: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding-bottom: 2.5em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
 }
 
