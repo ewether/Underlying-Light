@@ -164,20 +164,38 @@
     margin-bottom: .5em;
   }
 
-  #about-pricing {
+  .about-pricing {
     width: 14em;
     font-size: 1em;
     margin-top: 0em;
     margin-left: 2em;
     line-height: 2em;
+    border: none;
+    // display: flex;
     p {
     font-weight: 300;
     }
   }
 
+  .about-pricing-opt {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    // height: 2em;
+    padding: 0em 0em;
+    h2 {
+      font-size: 1em;
+      line-height: 2em;
+    }
+    p {
+      line-height: 2em;
+      font-weight: 400;
+    }
+  }
+
   #about-btn {
     margin-top: 2em;
-    margin-bottom: -1em;
+    margin-bottom: -0.4em;
     height: 3em;
     width: 15em;
     background-color: rgba(0,0,0,0.78);
