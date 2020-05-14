@@ -228,6 +228,274 @@ footer {
 }
 
 
+
+@media screen and (min-width:768px) {
+  section {
+    width: 100%;
+    height: 70em;
+    margin-left: 0em;
+    margin-top: 0;
+    background-color: transparent;
+    justify-content: normal;
+  }
+
+  .background {
+    background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(25, 25, 25, 0.1), rgba(26, 26, 26, 0.4)), url(massage.jpg);
+  }
+
+  .main-section {
+    height: 26em;
+    margin: 0;
+    margin-top: 4em;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    height: 4em;
+    background-color: rgba(0,0,0,0.56);
+  }
+
+  .nav-links {
+    width: 100%;
+    height: 4em;
+    margin-right: 2em;
+    align-self: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: inherit;
+    transform: translateX(0%);
+    background-color: transparent;
+    li {
+      opacity: 1;
+      padding-left: 3em;
+      line-height: 6em;
+      transform: scale(1);
+      transition: .1s ease-in-out;
+    }
+    a {
+      font-size: 1em;
+      padding-bottom: .5em;
+    }
+  }
+
+  .nav-links a:hover {
+    // color: #a5d1cf;
+    border-bottom: 1px solid white;
+  }
+
+  .nav-links li:hover {
+    transform: scale(1.01);
+  }
+
+  .background {
+    height: 76em;
+  }
+
+  #white-logo {
+    display: none;
+  }
+
+  #white-plant {
+    display: block;
+    height: 2.8em;
+    align-self: center;
+    margin-left: 1em;
+    margin-bottom: .7em;
+  }
+
+  #name-logo {
+    font-family: 'Averia Serif Libre';
+    color: white;
+    margin-left: -.55em;
+    display: flex;
+    width: 16em;
+    align-self: center;
+    text-decoration: none;
+  }
+
+  #laptop-logo {
+    display: block;
+    height: 12em;
+  }
+
+  .heading-two {
+    display: block;
+    font-family: 'Averia Serif Libre';
+    margin-top: .25em;
+    font-size: 1.25em;
+    letter-spacing: 3px;
+    color: white;
+  }
+
+  .book-btn {
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 16em;
+    height: 2.8em;
+    transform: scale(1);
+    transition: .1s ease-in-out;
+  }
+
+  .book-btn:hover {
+    background-color: rgba(0,0,0,0.4);
+    transform: scale(1.01);
+  }
+
+  .home-section {
+    display: none;
+  }
+
+  .linebreak {
+    display: none;
+  }
+
+  .home-linebreak {
+    width: 36%;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    border: .5px solid white;
+  }
+
+  .contact-icons {
+    background-color: rgba(255,255,255,0.56);
+    height: 30em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      display: block;
+      font-weight: 400;
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+  }
+
+  .home-cards {
+    display: block;
+    // height: 16em;
+    margin-top: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    li {
+      border-radius: 4px;
+      list-style-type: none;
+      color: white;
+      width: 18em;
+      height: 24em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: rgba(0,0,0,0.65);
+    }
+    h2 {
+      font-size: 1.2em;
+      font-weight: 400;
+      letter-spacing: 3px;
+      margin-top: .5em;
+    }
+    p {
+      font-weight: 300;
+      font-size: .95em;
+      margin-left: .5em;
+      margin-right: .5em;
+    }
+  }
+
+  .card-img {
+    width: 14em;
+    border-radius: 4px;
+    margin-top: .25em;
+    margin-bottom: .25em;
+  }
+
+  .card-two p {
+    margin-bottom: 1em;
+  }
+
+  .card-btn {
+    border-radius: 4px;
+    border-color: transparent;
+    // background-color: #c8e6e1;
+    background-color: rgba(255,255,255,0.9);
+    letter-spacing: 2px;
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 1em;
+    height: 3em;
+    width: 14em;
+    transform: scale(1);
+    transition: .1s ease-in-out;
+  }
+
+  .card-btn:hover {
+    background-color: rgba(255,255,255,0.95);
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+
+  .home-contact {
+    display: none;
+  }
+
+  footer {
+    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
+    background-color: #1c1c1c;
+    margin-top: -10em;
+    height: 14em;
+    display: block;
+    color: white;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 12em;
+  }
+
+  .footer-contact {
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    line-height: 1.5em;
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .footer-links a:hover {
+    color: #a5d1cf;
+  }
+
+  .copyright {
+    padding-top: .2em;
+    margin-left: 44%;
+    position: absolute;
+  }
+}
+
+
+
+
 // laptop screen
 @media screen and (min-width:1024px) {
   * {

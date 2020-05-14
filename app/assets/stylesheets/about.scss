@@ -62,12 +62,148 @@
 }
 
 @media screen and (min-width: 768px) {
+  #about-background {
+    height: 62em;
+  }
+
+  #page-logo {
+    display: none;
+  }
+
+  #page-name-logo {
+    font-family: 'Averia Serif Libre';
+    color: white;
+    margin-left: -.55em;
+    display: flex;
+    width: 16em;
+    align-self: center;
+    text-decoration: none;
+    letter-spacing: 2.9px;
+    font-size: 1.54em;
+  }
+
+  #page-nav {
+    height: 4em;
+  }
+
+  #page-nav-links {
+    margin-top: 0em;
+    // padding-right: 4em;
+    height: 6em;
+  }
+
+  #about-section {
+    background-color: transparent;
+    // height: 20em;
+    width: 70em;
+    margin-top: 2em;
+    margin-bottom: 27em;
+    display: flex;
+    flex-direction: row;
+  }
+
   .about {
-    width: 40em;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.56);
+    height: 50em;
+    text-align: -webkit-center;
+    margin-left: -1em;
+    width: 29em;
+    p {
+      line-height: 1.5em;
+      width: 26em;
+    }
   }
 
   .about-aside {
-    width: 18em;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.56);
+    width: 17em;
+    height: 40em;
+    margin-left: 1em;
+    margin-right: 10em;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style-type: none;
+    }
+    h3 {
+      font-weight: 400;
+      line-height: 2em;
+    }
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    // margin-top: 3.2em;
+    margin-bottom: 18em;
+    justify-content: space-between;
+    line-height: 2em;
+  }
+
+  .about-contact {
+    margin-top: 3em;
+    padding-top: 3em;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-top: 1px solid black;
+  }
+
+  .about-services {
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
+
+  .about-pricing {
+    width: 14em;
+    font-size: 1em;
+    margin-top: 0em;
+    margin-left: 2em;
+    line-height: 2em;
+    border: none;
+    // display: flex;
+    p {
+    font-weight: 300;
+    }
+  }
+
+  .about-pricing-opt {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    // height: 2em;
+    padding: 0em 0em;
+    h2 {
+      font-size: 1em;
+      line-height: 2em;
+    }
+    p {
+      line-height: 2em;
+      font-weight: 400;
+    }
+  }
+
+  #about-btn {
+    margin-bottom: 1em;
+    height: 3em;
+    width: 15em;
+    background-color: rgba(0,0,0,0.78);
+    color: white;
+  }
+
+  #about-btn:hover {
+    background-color: rgba(0,0,0,0.75);
+  }
+
+  .about-border {
+    margin: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding-bottom: 2.5em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
 }
 
