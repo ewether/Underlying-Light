@@ -104,7 +104,6 @@ input {
     cursor: pointer;
     /* Icon */
     &:hover {
-      // background-color: rgba(0,0,0,0.7);
     }
     &::after {
       content: "\276F";
@@ -117,7 +116,6 @@ input {
   &-content {
     max-height: 0;
     padding: 0 1em;
-    // background-color: rgba(0,0,0,0.7);
     transition: all .2s;
   }
   &-close {
@@ -125,10 +123,8 @@ input {
     justify-content: flex-end;
     padding: 1em;
     font-size: .75em;
-    // background-color: rgba(0,0,0,0.7);
     cursor: pointer;
     &:hover {
-      // background-color: rgba(0,0,0,0.7);
     }
   }
 }
@@ -136,7 +132,6 @@ input {
 // :checked
 input:checked {
   + .tab-label {
-    // background-color: rgba(0,0,0,0.7);
     &::after {
       transform: rotate(90deg);
     }
@@ -217,7 +212,6 @@ input:checked {
 
   .accordion {
     width: 44em;
-    // margin-top: 6em;
     margin-left: 1em;
     margin-bottom: 4em;
     // border-top: 1px solid black;
