@@ -39,7 +39,6 @@
   height: 18.2em;
   background-color: gray;
   border-radius: 4px;
-  // z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,8 +92,6 @@
     margin-left: 2em;
     margin-right: 1em;
     padding-top: 2em;
-    // padding-left: 4em;
-    // padding-right: 4em;
     width: 17em;
     h3 {
       font-weight: 400;
@@ -130,7 +127,7 @@
   }
 
   #contact-section {
-    width: 85em;
+    width: 81em;
     height: 50em;
     margin: 0 auto;
     margin-top: 2em;
@@ -166,17 +163,19 @@
     justify-content: center;
     border: 1px solid rgba(0,0,0,0.79);
     line-height: 2.5em;
+    border-radius: 4px;
     #contact-heading {
       margin-top: 0em;
+      // margin-right: 2em;
     }
   }
 
   .contact-hours {
-    margin-left: 1em;
+    margin-left: 2em;
     padding-top: 2em;
-    padding-left: 4em;
-    padding-right: 4em;
-    width: 31em;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 26em;
     h3 {
       font-weight: 400;
     }
