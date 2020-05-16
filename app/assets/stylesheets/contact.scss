@@ -16,11 +16,15 @@
   font-weight: 400;
 }
 
+#contact-background {
+  height: 70em;
+}
+
 #contact-section {
-  height: 35em;
-  width: 22em;
-  margin-top: 2em;
-  margin-left: 2em;
+  height: 61em;
+  width: 24em;
+  margin-top: 1em;
+  margin-left: 1em;
   background-color: rgba(255,255,255,0.56);
   display: flex;
   flex-direction: column;
@@ -29,16 +33,47 @@
   border-radius: 4px;
 }
 
+.contact {
+  font-size: 1.1em;
+  margin-top: 1em;
+  p {
+  line-height: 2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  }
+}
+
 #contact-heading {
   margin-top: 2em;
   font-weight: 400;
 }
 
 #map {
-  width: 22em;
-  height: 18.2em;
+  width: 23em;
+  height: 17em;
+  margin-top: 1.5em;
+  margin-left: .5em;
+  margin-bottom: -1em;
   background-color: gray;
   border-radius: 4px;
+}
+
+.contact-hour-section {
+  margin-top: 0em;
+}
+
+.contact-hours {
+  margin-top: 1em;
+}
+
+.hours {
+  margin-bottom: .75em;
+  p {
+    font-size: 1.1em;
+  }
+  h3 {
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 768px) {
