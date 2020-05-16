@@ -109,8 +109,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   h1 {
+    margin-top: .5em;
     font-size: 1.6rem;
     text-align: center;
     font-weight: 400;
@@ -118,35 +119,49 @@ nav {
   p {
     height: 4em;
     width: 18em;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.5em;
     text-align: center;
     font-weight: 400;
     margin-top: 1em;
+    margin-bottom: 1em;
     padding-right: 1em;
     padding-left: 1em;
   }
 }
 
+.home-border {
+  margin-top: 2em;
+  margin-bottom: -3em;
+  width: 20em;
+  border-bottom: 1px solid black;
+}
+
+.book-btn {
+  background-color: rgba(0,0,0,0.79);
+  color: white;
+  border: thin solid rgba(0,0,0,0.79);
+  border-radius: 4px;
+  margin-top: 1em;
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 3em;
+  width: 16em;
+  cursor: pointer;
+}
+
 .contact-icons {
-  height: 10em;
-  margin-bottom: 2.3em;
+  height: 8em;
+  margin-bottom: 3em;
   p {
-    margin-top: 1em;
-    font-size: 1.1rem;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: 400;
   }
   h2 {
     display: none;
   }
-}
-
-
-.linebreak {
-  width: 21em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: .5em;
 }
 
 .active, .btn:hover {
@@ -163,7 +178,7 @@ nav {
 }
 
 .background {
-  height: 100%;
+  height: 46em;
   width: 100%;
   background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.4)), url(massage.jpg);
   background-size: cover;
@@ -175,17 +190,6 @@ nav {
   transform: translateX(0%);
 }
 
-.book-btn {
-  background-color: rgba(0,0,0,0.79);
-  color: white;
-  border: thin solid rgba(0,0,0,0.79);
-  border-radius: 4px;
-  font-size: 1.1rem;
-  font-weight: 400;
-  height: 3em;
-  width: 16em;
-  cursor: pointer;
-}
 
 .home-cards {
   display: none;
