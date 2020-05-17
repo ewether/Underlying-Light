@@ -14,7 +14,7 @@
   letter-spacing: 2px;
 }
 
-section {
+.section {
   height: 31em;
   width: 22em;
   margin-top: 2em;
@@ -195,11 +195,6 @@ nav {
   display: none;
 }
 
-// @media screen and (min-width:768px) {
-//   .nav-links {
-
-//   }
-// }
   .nav-active {
   transform: translateX(0%);
   }
@@ -234,7 +229,7 @@ footer {
 
 
 @media screen and (min-width:768px) {
-  section {
+  .section {
     width: 100%;
     height: 70em;
     margin-left: 0em;
@@ -324,9 +319,18 @@ footer {
   #laptop-logo {
     display: block;
     height: 12em;
+    margin-left: 2em;
+  }
+
+  .home-border {
+    display: none;
   }
 
   .heading-two {
+    width: 20em;
+    height: 2em;
+    border-bottom: 1.5px solid white;
+    text-align: center;
     display: block;
     font-family: 'Averia Serif Libre';
     margin-top: .25em;
@@ -386,16 +390,15 @@ footer {
     display: block;
     // height: 16em;
     margin-top: 4em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     li {
-      border-radius: 4px;
       list-style-type: none;
       color: white;
-      width: 18em;
+      // width: 17em;
       height: 24em;
       display: flex;
       flex-direction: column;
@@ -431,7 +434,6 @@ footer {
   .card-btn {
     border-radius: 4px;
     border-color: transparent;
-    // background-color: #c8e6e1;
     background-color: rgba(255,255,255,0.9);
     letter-spacing: 2px;
     margin-bottom: .5em;
@@ -511,7 +513,7 @@ footer {
     letter-spacing: 2px;
   }
 
-  section {
+  .section {
     width: 100%;
     height: 70em;
     margin-left: 0em;
@@ -602,15 +604,24 @@ footer {
   #laptop-logo {
     display: block;
     height: 12em;
+    margin-left: 4.75em;
   }
 
   .heading-two {
     display: block;
     font-family: 'Averia Serif Libre';
+    width: 24em;
+    height: 2em;
+    border-bottom: 1.5px solid white;
+    text-align: center;
     margin-top: .25em;
     font-size: 1.25em;
     letter-spacing: 3px;
     color: white;
+  }
+
+  .home-border {
+    display: none;
   }
 
   .book-btn {
@@ -634,18 +645,8 @@ footer {
     display: none;
   }
 
-  .linebreak {
-    display: none;
-  }
-
-  .home-linebreak {
-    width: 36%;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-    border: .5px solid white;
-  }
-
   .contact-icons {
+    // display: none;
     background-color: rgba(255,255,255,0.56);
     height: 30em;
     width: 100%;
@@ -673,7 +674,7 @@ footer {
       border-radius: 4px;
       list-style-type: none;
       color: white;
-      width: 28em;
+      width: 27em;
       height: 30em;
       display: flex;
       flex-direction: column;
@@ -696,7 +697,7 @@ footer {
   }
 
   .card-img {
-    width: 22em;
+    width: 21em;
     border-radius: 4px;
     margin-top: .25em;
     margin-bottom: .25em;
