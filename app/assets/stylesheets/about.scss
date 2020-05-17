@@ -1,13 +1,8 @@
-#about-active {
-  border-bottom: 1px solid white;
-  padding-bottom: .5em;
-}
-
 #about-background {
   height: 63em;
 }
 
-#page-logo {
+.page-logo {
   height: 5em;
   position: absolute;
   margin-left: 9.5em;
@@ -15,11 +10,11 @@
   display: block;
 }
 
-#white-plant {
+.white-plant {
   display: none;
 }
 
-#name-logo {
+.name-logo {
   display: none;
 }
 

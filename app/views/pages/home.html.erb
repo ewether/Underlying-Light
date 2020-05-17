@@ -5,7 +5,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
-  <!-- <link href="./resources/css/index.css" type="text/css" rel="stylesheet"> -->
   <title>Home</title>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
@@ -14,12 +13,12 @@
   <div class="container">
     <div class="background">
       <nav>
-        <a href="/" id="white-logo"><img class="logo" src="assets/logo.png" alt="pic"></a>
-        <a href="/" id="white-plant"><img id="white-plant" src="assets/white-plant.png" alt="pic"></a>
-        <a href="/" id="name-logo"><h2 id="name-logo">Underlying Light</h2></a>
+        <a href="/" class="white-logo"><img class="logo" src="assets/logo.png" alt="pic"></a>
+        <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
+        <a href="/" class="name-logo"><h2 class="name-logo">Underlying Light</h2></a>
           <ul class="nav-links">
             <li>
-              <a href="/" id="home-active">Home</a>
+              <a href="/" class="active">Home</a>
             </li>
             <li>
               <a href="about">About</a>
@@ -41,7 +40,7 @@
       <section class="section">
         <div class="main-section">
           <div class="main-logo">
-            <a href="/"><img id="laptop-logo" src="assets/logo.png" alt="pic"></a>
+            <a href="/"><img class="laptop-logo" src="assets/logo.png" alt="pic"></a>
             <h2 class="heading-two">Massage Therapy</h2>
           </div>
 
@@ -50,14 +49,19 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
 
-          <!-- <hr class="home-linebreak" /> -->
           <a href="pricing"><button class="book-btn">Book an appointment</button></a>
           <div class="home-border">
           </div>
         </div>
 
-        <!-- <hr class="linebreak" /> -->
-
+        <div class="home-contact">
+          <div class="contact-icons">
+            <h2>Contact Form</h2>
+            <p><i class="fas fa-phone"></i> (248)705-7423</i></p>
+            <p><i class="fas fa-envelope"></i> ewether@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Monday - Friday <br> 8:00am - 6:00pm</p>
+          </div>
+        </div>
 
         <div class="card-section">
           <ul class="home-cards">
@@ -82,15 +86,6 @@
           </ul>
         </div>
 
-        <div class="home-contact">
-          <div class="contact-icons">
-            <h2>Contact Form</h2>
-            <p><i class="fas fa-phone"></i> (248)705-7423</i></p>
-            <p><i class="fas fa-envelope"></i> ewether@gmail.com</p>
-            <p><i class="fas fa-clock"></i> Monday - Friday <br> 8:00am - 6:00pm</p>
-          </div>
-        </div>
-
     </div>
     </section>
 
@@ -98,14 +93,12 @@
       <div class="footer">
           <hr class="linebreak" />
         <div class="footer-contact">
-          <!-- <h3>Contact Us</h3> -->
           <p><i class="fas fa-phone"></i> (248)705-7423</i></p>
           <p><i class="fas fa-envelope"></i> ewether@gmail.com</p>
           <p><i class="fas fa-clock"></i> Monday - Friday <br> 8:00am - 6:00pm</p>
         </div>
 
         <ul class="footer-links">
-          <!-- <h3>Pages</h3> -->
           <li>
             <a href="/">Home</a>
           </li>

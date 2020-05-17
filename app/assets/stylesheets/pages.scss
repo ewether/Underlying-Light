@@ -14,11 +14,30 @@
   letter-spacing: 2px;
 }
 
+.container {
+  position: absolute;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ced9d4;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.4)), url(massage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .section {
-  height: 31em;
-  width: 22em;
-  margin-top: 2em;
-  margin-left: 2em;
+  height: 71%;
+  width: 92%;
+  margin-top: 4%;
+  margin-left: 4%;
   background-color: rgba(255,255,255,0.56);
   display: flex;
   flex-direction: column;
@@ -26,11 +45,20 @@
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  min-height: 6em;
+  // display: flex;
+  // justify-content: space-around;
+  position: relative;
   height: 11em;
+  width: 100%;
   background-color: rgba(0,0,0,0.65);
+}
+
+.white-logo {
+  display: flex;
+  justify-content: center;
+  img {
+    height: 10em;
+  }
 }
 
 .nav-links {
@@ -59,28 +87,20 @@ nav {
   }
 }
 
-#home-active {
-  // color: #a5d1cf;
+.active {
   border-bottom: 1px solid white;
   padding-bottom: .5em;
 }
 
-.logo {
-  height: 9.2em;
-  position: absolute;
-  margin-left: 4.1em;
-  margin-top: 1em;
-}
-
-#name-logo {
+.name-logo {
   display: none;
 }
 
-#white-plant {
+.white-plant {
   display: none;
 }
 
-#laptop-logo {
+.laptop-logo {
   display: none;
 }
 
@@ -90,8 +110,9 @@ nav {
 
 .burger {
   display: block;
-  margin-left: 20em;
-  margin-top: 8.45em;
+  text-align: -webkit-right;
+  margin-top: -1.4em;
+  margin-right: 1em;
   cursor: pointer;
 }
 
@@ -168,31 +189,82 @@ nav {
   color: black;
 }
 
-.container {
-  position: absolute;
-  overflow-x: hidden;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.background {
-  height: 46em;
-  width: 100%;
-  background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.4)), url(massage.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
 .nav-active {
   transform: translateX(0%);
 }
 
+.home-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  height: 34em;
+  margin-top: 9em;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  li {
+    border-radius: 4px;
+    list-style-type: none;
+    color: white;
+    width: 27em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.65);
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top: 1em;
+  }
+  p {
+    font-weight: 300;
+    font-size: .95em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.card-img {
+  width: 21em;
+  border-radius: 4px;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+.card-two p {
+}
+
+.card-btn {
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0.9);
+  letter-spacing: 2px;
+  margin-bottom: .5em;
+  font-weight: 400;
+  font-size: 1em;
+  height: 3em;
+  width: 16em;
+  transform: scale(1);
+  transition: .1s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: rgba(255,255,255,0.95);
+  cursor: pointer;
+  transform: scale(1.02);
+}
 
 .home-cards {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
 }
 
   .nav-active {
@@ -225,8 +297,6 @@ nav {
 footer {
   display: none;
 }
-
-
 
 @media screen and (min-width:768px) {
   .section {
@@ -662,70 +732,7 @@ footer {
   }
 
   .home-cards {
-    display: block;
-    height: 34em;
-    margin-top: 9em;
-    margin-left: 2em;
-    margin-right: 2em;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    li {
-      border-radius: 4px;
-      list-style-type: none;
-      color: white;
-      width: 27em;
-      height: 30em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      background-color: rgba(0,0,0,0.65);
-    }
-    h2 {
-      font-size: 1.2em;
-      font-weight: 400;
-      letter-spacing: 3px;
-      margin-top: 1em;
-    }
-    p {
-      font-weight: 300;
-      font-size: .95em;
-      margin-left: 1em;
-      margin-right: 1em;
-    }
-  }
-
-  .card-img {
-    width: 21em;
-    border-radius: 4px;
-    margin-top: .25em;
-    margin-bottom: .25em;
-  }
-
-  .card-two p {
-    // margin-bottom: 1.2em;
-  }
-
-  .card-btn {
-    border-radius: 4px;
-    border-color: transparent;
-    // background-color: #c8e6e1;
-    background-color: rgba(255,255,255,0.9);
-    letter-spacing: 2px;
-    margin-bottom: .5em;
-    font-weight: 400;
-    font-size: 1em;
-    height: 3em;
-    width: 16em;
-    transform: scale(1);
-    transition: .1s ease-in-out;
-  }
-
-  .card-btn:hover {
-    background-color: rgba(255,255,255,0.95);
-    cursor: pointer;
-    transform: scale(1.02);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .home-contact {
@@ -734,7 +741,6 @@ footer {
 
   footer {
     margin-top: 0em;
-    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
     background-color: #1c1c1c;
     height: 14em;
     display: block;
