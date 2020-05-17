@@ -526,25 +526,28 @@ footer {
   }
 
   footer {
-    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
-    background-color: #1c1c1c;
-    // margin-top: -10em;
-    height: 14em;
+    height: 8em;
     display: block;
-    color: white;
   }
 
   .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 12em;
+    margin-top: 0em;
+    background-color: #1c1c1c;
+    height: 14em;
+    color: white;
   }
 
   .footer-contact {
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
+  }
+
+  .footer-content {
+    padding-top: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .footer-links {
@@ -563,13 +566,14 @@ footer {
   }
 
   .copyright {
-    padding-top: .2em;
-    margin-left: 44%;
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+    margin-left: 0;
+    margin-right: 2%;
+    right: 0;
   }
 }
-
-
 
 
 // laptop screen
@@ -583,9 +587,8 @@ footer {
     letter-spacing: 2px;
   }
 
-  .section {
+  .home-section {
     width: 100%;
-    height: 70em;
     margin-left: 0em;
     margin-top: 0;
     background-color: transparent;
@@ -597,9 +600,10 @@ footer {
   }
 
   .home-main-section {
-    height: 32em;
+    height: 40em;
     margin: 0;
-    margin-top: 9em;
+    display: flex;
+    justify-content: center;
   }
 
   .burger {
@@ -608,14 +612,14 @@ footer {
 
   nav {
     display: flex;
-    height: 4em;
+    height: 5em;
     background-color: rgba(0,0,0,0.56);
   }
 
   .nav-links {
     width: 100%;
     height: 4em;
-    margin-right: 7em;
+    margin-right: 7%;
     align-self: center;
     justify-content: flex-end;
     flex-direction: row;
@@ -624,7 +628,7 @@ footer {
     background-color: transparent;
     li {
       opacity: 1;
-      padding-left: 4em;
+      padding-left: 9%;
       line-height: 6em;
       transform: scale(1);
       transition: .1s ease-in-out;
@@ -647,19 +651,19 @@ footer {
     height: 76em;
   }
 
-  #white-logo {
+  .white-logo {
     display: none;
   }
 
-  #white-plant {
+  .white-plant {
     display: block;
     height: 2.8em;
     align-self: center;
-    margin-left: 3em;
+    margin-left: 7%;
     margin-bottom: .7em;
   }
 
-  #name-logo {
+  .name-logo {
     font-family: 'Averia Serif Libre';
     color: white;
     margin-left: -.55em;
@@ -669,7 +673,7 @@ footer {
     text-decoration: none;
   }
 
-  #laptop-logo {
+  .laptop-logo {
     display: block;
     height: 12em;
     margin-left: 4.75em;
@@ -679,7 +683,7 @@ footer {
     display: block;
     font-family: 'Averia Serif Libre';
     width: 24em;
-    height: 2em;
+    height: 2.5em;
     border-bottom: 1.5px solid white;
     text-align: center;
     margin-top: .25em;
@@ -728,15 +732,27 @@ footer {
     }
   }
 
+  .card-section {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
   .home-cards {
+    margin-top: 10em;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #card-four {
+    display: none;
   }
 
   .home-contact {
     display: none;
   }
 
-  footer {
+  .footer {
+    display: flex;
+    justify-content: space-between;
     margin-top: 0em;
     background-color: #1c1c1c;
     height: 14em;
@@ -744,28 +760,11 @@ footer {
     color: white;
   }
 
-  .footer {
+  .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 26em;
-  }
-
-  .footer-contact {
-    line-height: 1.5em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-links {
-    line-height: 1.5em;
-    li {
-      list-style-type: none;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-    }
+    padding: 4em 26%;
   }
 
   .footer-links a:hover {
@@ -773,9 +772,12 @@ footer {
   }
 
   .copyright {
-    padding-top: .2em;
-    margin-left: 70%;
+    align-self: flex-end;
     position: absolute;
+    margin-top: -2em;
+    margin-left: 0;
+    margin-right: 2%;
+    right: 0;
   }
 }
 
