@@ -14,23 +14,40 @@
   letter-spacing: 2px;
 }
 
-.section {
-  height: 31em;
-  width: 22em;
-  margin-top: 2em;
-  margin-left: 2em;
-  background-color: rgba(255,255,255,0.56);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.container {
+  position: absolute;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #637177;
 }
 
+.background {
+  height: 72%;
+  width: 100%;
+  background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.4)), url(massage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
 nav {
-  display: flex;
-  justify-content: space-around;
-  min-height: 6em;
+  position: relative;
   height: 11em;
+  width: 100%;
   background-color: rgba(0,0,0,0.65);
+}
+
+.white-logo {
+  display: flex;
+  justify-content: center;
+  img {
+    margin-top: 1.2em;
+    height: 9em;
+  }
 }
 
 .nav-links {
@@ -59,28 +76,20 @@ nav {
   }
 }
 
-#home-active {
-  // color: #a5d1cf;
+.active {
   border-bottom: 1px solid white;
   padding-bottom: .5em;
 }
 
-.logo {
-  height: 9.2em;
-  position: absolute;
-  margin-left: 4.1em;
-  margin-top: 1em;
-}
-
-#name-logo {
+.name-logo {
   display: none;
 }
 
-#white-plant {
+.white-plant {
   display: none;
 }
 
-#laptop-logo {
+.laptop-logo {
   display: none;
 }
 
@@ -90,8 +99,9 @@ nav {
 
 .burger {
   display: block;
-  margin-left: 20em;
-  margin-top: 8.45em;
+  text-align: -webkit-right;
+  margin-top: -1.6em;
+  margin-right: 1em;
   cursor: pointer;
 }
 
@@ -103,37 +113,58 @@ nav {
   transition: all 0.3s ease;
 }
 
-.main-section {
-  margin-top: 2em;
-  height: 16em;
+.home-section {
+  width: 92%;
+  margin-top: 4%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-main-section {
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   h1 {
-    margin-top: .5em;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
   }
   p {
-    height: 4em;
-    width: 18em;
+    width: 96%;
     font-size: 1.2rem;
     line-height: 1.5em;
     text-align: center;
     font-weight: 400;
     margin-top: 1em;
     margin-bottom: 1em;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding: 0em 1em;
   }
+}
+
+.mobile-home-section {
+  height: 30em;
+  padding-bottom: 1em;
+  background-color: rgba(255,255,255,0.56);
+}
+
+.mobile-section {
+  text-align: -webkit-center;
+}
+
+.home-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 11em;
 }
 
 .home-border {
   margin-top: 2em;
-  margin-bottom: -3em;
-  width: 20em;
+  margin-bottom: .5em;
+  width: 80%;
   border-bottom: 1px solid black;
 }
 
@@ -142,7 +173,6 @@ nav {
   color: white;
   border: thin solid rgba(0,0,0,0.79);
   border-radius: 4px;
-  margin-top: 1em;
   font-size: 1.1rem;
   font-weight: 400;
   height: 3em;
@@ -151,8 +181,6 @@ nav {
 }
 
 .contact-icons {
-  height: 8em;
-  margin-bottom: 3em;
   p {
     margin-bottom: 1em;
     font-size: 1.2rem;
@@ -168,31 +196,81 @@ nav {
   color: black;
 }
 
-.container {
-  position: absolute;
-  overflow-x: hidden;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.background {
-  height: 46em;
-  width: 100%;
-  background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.4)), url(massage.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
 .nav-active {
   transform: translateX(0%);
 }
 
+.home-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  li {
+    border-radius: 4px;
+    list-style-type: none;
+    color: white;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.65);
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top: 1em;
+  }
+  p {
+    width: 80%;
+    font-weight: 300;
+    font-size: .95em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+#card-four {
+  display: none;
+}
+
+.card-img {
+  width: 21em;
+  border-radius: 4px;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+.card-btn {
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0.9);
+  letter-spacing: 2px;
+  margin-bottom: .5em;
+  font-weight: 400;
+  font-size: 1em;
+  height: 3em;
+  width: 16em;
+  transform: scale(1);
+  transition: .1s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: rgba(255,255,255,0.95);
+  cursor: pointer;
+  transform: scale(1.02);
+}
 
 .home-cards {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
 }
 
   .nav-active {
@@ -226,8 +304,6 @@ footer {
   display: none;
 }
 
-
-
 @media screen and (min-width:768px) {
   .section {
     width: 100%;
@@ -242,8 +318,12 @@ footer {
     background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(25, 25, 25, 0.1), rgba(26, 26, 26, 0.4)), url(massage.jpg);
   }
 
-  .main-section {
-    height: 26em;
+  .mobile-home-section {
+    background-color: transparent;
+  }
+
+  .home-main-section {
+    height: 68%;
     margin: 0;
     margin-top: 4em;
   }
@@ -260,8 +340,9 @@ footer {
 
   .nav-links {
     width: 100%;
+    margin-top: -22em;
     height: 4em;
-    margin-right: 2em;
+    margin-right: 6%;
     align-self: center;
     justify-content: flex-end;
     flex-direction: row;
@@ -270,10 +351,8 @@ footer {
     background-color: transparent;
     li {
       opacity: 1;
-      padding-left: 3em;
-      line-height: 6em;
+      padding-left: 6%;
       transform: scale(1);
-      transition: .1s ease-in-out;
     }
     a {
       font-size: 1em;
@@ -282,7 +361,6 @@ footer {
   }
 
   .nav-links a:hover {
-    // color: #a5d1cf;
     border-bottom: 1px solid white;
   }
 
@@ -294,19 +372,19 @@ footer {
     height: 76em;
   }
 
-  #white-logo {
+  .white-logo {
     display: none;
   }
 
-  #white-plant {
+  .white-plant {
     display: block;
     height: 2.8em;
     align-self: center;
-    margin-left: 1em;
+    margin-left: 6%;
     margin-bottom: .7em;
   }
 
-  #name-logo {
+  .name-logo {
     font-family: 'Averia Serif Libre';
     color: white;
     margin-left: -.55em;
@@ -316,7 +394,7 @@ footer {
     text-decoration: none;
   }
 
-  #laptop-logo {
+  .laptop-logo {
     display: block;
     height: 12em;
     margin-left: 2em;
@@ -340,6 +418,7 @@ footer {
   }
 
   .book-btn {
+    margin-top: 1.5em;
     color: white;
     background-color: rgba(0,0,0,0.3);
     border: 2px solid white;
@@ -356,7 +435,7 @@ footer {
     transform: scale(1.01);
   }
 
-  .home-section {
+  .mobile-section {
     display: none;
   }
 
@@ -387,48 +466,39 @@ footer {
   }
 
   .home-cards {
-    display: block;
-    // height: 16em;
-    margin-top: 4em;
-    margin-left: .5em;
-    margin-right: .5em;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    width: 100%;
     text-align: center;
-    li {
-      list-style-type: none;
-      color: white;
-      // width: 17em;
-      height: 24em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      background-color: rgba(0,0,0,0.65);
+    p {
+      width: 80%;
     }
+  }
+
+  #card-four {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.25em;
+    height: inherit;
+    text-align: center;
     h2 {
-      font-size: 1.2em;
-      font-weight: 400;
-      letter-spacing: 3px;
-      margin-top: .5em;
+      margin-bottom: 1em;
+      margin-top: -1em;
     }
     p {
-      font-weight: 300;
-      font-size: .95em;
-      margin-left: .5em;
-      margin-right: .5em;
+      line-height: 2em;
+      width: 100%;
+      margin: 0em;
     }
   }
 
   .card-img {
-    width: 14em;
     border-radius: 4px;
     margin-top: .25em;
     margin-bottom: .25em;
-  }
-
-  .card-two p {
-    margin-bottom: 1em;
   }
 
   .card-btn {
@@ -456,25 +526,28 @@ footer {
   }
 
   footer {
-    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
-    background-color: #1c1c1c;
-    margin-top: -10em;
-    height: 14em;
+    height: 8em;
     display: block;
-    color: white;
   }
 
   .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 12em;
+    margin-top: 0em;
+    background-color: #1c1c1c;
+    height: 14em;
+    color: white;
   }
 
   .footer-contact {
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
+  }
+
+  .footer-content {
+    padding-top: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .footer-links {
@@ -493,13 +566,14 @@ footer {
   }
 
   .copyright {
-    padding-top: .2em;
-    margin-left: 44%;
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+    margin-left: 0;
+    margin-right: 2%;
+    right: 0;
   }
 }
-
-
 
 
 // laptop screen
@@ -513,9 +587,8 @@ footer {
     letter-spacing: 2px;
   }
 
-  .section {
+  .home-section {
     width: 100%;
-    height: 70em;
     margin-left: 0em;
     margin-top: 0;
     background-color: transparent;
@@ -526,11 +599,11 @@ footer {
     background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(25, 25, 25, 0.1), rgba(26, 26, 26, 0.4)), url(massage.jpg);
   }
 
-  .main-section {
-    height: 32em;
+  .home-main-section {
+    height: 40em;
     margin: 0;
-    margin-top: 9em;
-    // margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
   }
 
   .burger {
@@ -539,14 +612,14 @@ footer {
 
   nav {
     display: flex;
-    height: 4em;
+    height: 5em;
     background-color: rgba(0,0,0,0.56);
   }
 
   .nav-links {
     width: 100%;
     height: 4em;
-    margin-right: 7em;
+    margin-right: 7%;
     align-self: center;
     justify-content: flex-end;
     flex-direction: row;
@@ -555,7 +628,7 @@ footer {
     background-color: transparent;
     li {
       opacity: 1;
-      padding-left: 4em;
+      padding-left: 9%;
       line-height: 6em;
       transform: scale(1);
       transition: .1s ease-in-out;
@@ -567,7 +640,6 @@ footer {
   }
 
   .nav-links a:hover {
-    // color: #a5d1cf;
     border-bottom: 1px solid white;
   }
 
@@ -579,19 +651,19 @@ footer {
     height: 76em;
   }
 
-  #white-logo {
+  .white-logo {
     display: none;
   }
 
-  #white-plant {
+  .white-plant {
     display: block;
     height: 2.8em;
     align-self: center;
-    margin-left: 3em;
+    margin-left: 7%;
     margin-bottom: .7em;
   }
 
-  #name-logo {
+  .name-logo {
     font-family: 'Averia Serif Libre';
     color: white;
     margin-left: -.55em;
@@ -601,7 +673,7 @@ footer {
     text-decoration: none;
   }
 
-  #laptop-logo {
+  .laptop-logo {
     display: block;
     height: 12em;
     margin-left: 4.75em;
@@ -611,7 +683,7 @@ footer {
     display: block;
     font-family: 'Averia Serif Libre';
     width: 24em;
-    height: 2em;
+    height: 2.5em;
     border-bottom: 1.5px solid white;
     text-align: center;
     margin-top: .25em;
@@ -641,12 +713,11 @@ footer {
     transform: scale(1.01);
   }
 
-  .home-section {
+  .mobile-section {
     display: none;
   }
 
   .contact-icons {
-    // display: none;
     background-color: rgba(255,255,255,0.56);
     height: 30em;
     width: 100%;
@@ -661,108 +732,39 @@ footer {
     }
   }
 
+  .card-section {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
   .home-cards {
-    display: block;
-    height: 34em;
-    margin-top: 9em;
-    margin-left: 2em;
-    margin-right: 2em;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    li {
-      border-radius: 4px;
-      list-style-type: none;
-      color: white;
-      width: 27em;
-      height: 30em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      background-color: rgba(0,0,0,0.65);
-    }
-    h2 {
-      font-size: 1.2em;
-      font-weight: 400;
-      letter-spacing: 3px;
-      margin-top: 1em;
-    }
-    p {
-      font-weight: 300;
-      font-size: .95em;
-      margin-left: 1em;
-      margin-right: 1em;
-    }
+    margin-top: 10em;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .card-img {
-    width: 21em;
-    border-radius: 4px;
-    margin-top: .25em;
-    margin-bottom: .25em;
-  }
-
-  .card-two p {
-    // margin-bottom: 1.2em;
-  }
-
-  .card-btn {
-    border-radius: 4px;
-    border-color: transparent;
-    // background-color: #c8e6e1;
-    background-color: rgba(255,255,255,0.9);
-    letter-spacing: 2px;
-    margin-bottom: .5em;
-    font-weight: 400;
-    font-size: 1em;
-    height: 3em;
-    width: 16em;
-    transform: scale(1);
-    transition: .1s ease-in-out;
-  }
-
-  .card-btn:hover {
-    background-color: rgba(255,255,255,0.95);
-    cursor: pointer;
-    transform: scale(1.02);
+  #card-four {
+    display: none;
   }
 
   .home-contact {
     display: none;
   }
 
-  footer {
+  .footer {
+    display: flex;
+    justify-content: space-between;
     margin-top: 0em;
-    // background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(255, 255, 255, 0.0), rgba(26, 26, 26, 0.3)), url(massage.jpg);
     background-color: #1c1c1c;
     height: 14em;
     display: block;
     color: white;
   }
 
-  .footer {
+  .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 26em;
-  }
-
-  .footer-contact {
-    line-height: 1.5em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-links {
-    line-height: 1.5em;
-    li {
-      list-style-type: none;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-    }
+    padding: 4em 26%;
   }
 
   .footer-links a:hover {
@@ -770,9 +772,12 @@ footer {
   }
 
   .copyright {
-    padding-top: .2em;
-    margin-left: 70%;
+    align-self: flex-end;
     position: absolute;
+    margin-top: -2em;
+    margin-left: 0;
+    margin-right: 2%;
+    right: 0;
   }
 }
 
