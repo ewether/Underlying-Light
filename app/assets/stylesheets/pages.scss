@@ -24,8 +24,8 @@
   background-color: #637177;
 }
 
-.background {
-  height: 72%;
+.home-background {
+  height: 80%;
   width: 100%;
   background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.4)), url(massage.jpg);
   background-size: cover;
@@ -359,7 +359,8 @@ nav {
     justify-content: normal;
   }
 
-  .background {
+  .home-background {
+    height: 76em;
     background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(25, 25, 25, 0.1), rgba(26, 26, 26, 0.4)), url(massage.jpg);
   }
 
@@ -681,7 +682,7 @@ nav {
     justify-content: normal;
   }
 
-  .background {
+  .home-background {
     height: 78em;
     background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(25, 25, 25, 0.1), rgba(26, 26, 26, 0.4)), url(massage.jpg);
   }

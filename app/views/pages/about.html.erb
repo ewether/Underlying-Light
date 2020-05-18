@@ -10,8 +10,8 @@
 <body>
 
   <div class="container">
-   <div class="background" id="about-background">
-      <nav class=page-nav>
+   <div class="about-background">
+      <nav class="page-nav">
         <a href="/"><img class="page-logo" src="assets/white-plant.png" alt="pic"></a>
         <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
         <a href="/" class="name-logo"><h2 class="name-logo" id="page-name-logo">Underlying Light</h2></a>
@@ -69,9 +69,11 @@
             </li>
             <li>
               <div class="about-border">
-                <a href="pricing"><button class="card-btn" id="about-btn">Book appointment</button></a>
-                <a href="contact"><button class="card-btn" id="about-btn">Contact Us</button></a>
-            </div>
+                <div class="about-buttons">
+                  <a href="pricing"><button class="card-btn" id="about-btn">Book appointment</button></a>
+                  <a href="contact"><button class="card-btn" id="about-btn">Contact Us</button></a>
+                </div>
+              </div>
             </li>
           </ul>
         </aside>
@@ -129,12 +131,12 @@
       </div>
     </footer>
 
-    <div class="mobile-footer">
-      <div class="mobile-ftr-content">
+    <div class="mobile-footer" id="page-footer">
+      <div class="mobile-ftr-content" id="mobile-page-div">
         <div class="mobile-ftr-pages">
           <a href="/" class="mobile-ftr-logo"><img class="mobile-ftr-logo" src="assets/white-plant.png" alt="pic"></a>
           <h3>Pages</h3>
-          <ul class="mobile-links">
+          <ul class="mobile-links" id="mobile-page-links">
             <li>
               <a href="/">Home</a>
             </li>
