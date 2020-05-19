@@ -10,12 +10,12 @@
 <body>
 
   <div class="container">
-   <div class="background" id="about-background">
-      <nav id="page-nav">
+   <div class="about-background">
+      <nav class="page-nav">
         <a href="/"><img class="page-logo" src="assets/white-plant.png" alt="pic"></a>
         <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
-        <a href="/" class="name-logo"><h2 class="page-name-logo">Underlying Light</h2></a>
-          <ul id="page-nav-links" class="nav-links">
+        <a href="/" class="name-logo"><h2 class="name-logo" id="page-name-logo">Underlying Light</h2></a>
+          <ul class="nav-links" id="page-nav-links">
             <li>
               <a href="/">Home</a>
             </li>
@@ -29,7 +29,7 @@
               <a href="contact">Contact</a>
             </li>
           </ul>
-        <div id="page-burger" class="burger">
+        <div class="burger" id="page-burger">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
@@ -69,47 +69,96 @@
             </li>
             <li>
               <div class="about-border">
-                <a href="pricing"><button class="card-btn" id="about-btn">Book appointment</button></a>
-                <a href="contact"><button class="card-btn" id="about-btn">Contact Us</button></a>
-            </div>
+                <div class="about-buttons">
+                  <a href="pricing"><button class="card-btn" id="about-btn">Book appointment</button></a>
+                  <a href="contact"><button class="card-btn" id="about-btn">Contact Us</button></a>
+                </div>
+              </div>
             </li>
           </ul>
         </aside>
       </div>
     </section>
 
-      <footer>
-      <div class="footer">
-          <hr class="linebreak" />
+    <footer class="footer">
+      <div class="main-footer-content">
+
+        <div class="footer-logo-div">
+          <div class="footer-logo">
+          <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
+          <a href="/" class="name-logo"><h2 class="name-logo">Underlying Light</h2></a>
+
+          </div>
+          <!-- <h2>Underlying Light</h2> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aut, id nostrum.</p>
+        </div>
+
+        <div class="vertical-line">
+        </div>
+
         <div class="footer-contact">
+          <h3>Contact</h3>
           <p><i class="fas fa-phone"></i> (248)705-7423</i></p>
           <p><i class="fas fa-envelope"></i> ewether@gmail.com</p>
           <p><i class="fas fa-clock"></i> Monday - Friday <br> 8:00am - 6:00pm</p>
         </div>
 
-        <ul class="footer-links">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="about">About</a>
-          </li>
-          <li>
-            <a href="pricing">Pricing</a>
-          </li>
-          <li>
-            <a href="contact">Contact</a>
-          </li>
-        </ul>
 
-
-      </div>
-        <div class="copyright">
-          <small>© 2020 underlyinglight.com All Rights Reserved</small>
+        <div class="footer-page-links">
+          <h3>Pages</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="about">About</a>
+            </li>
+            <li>
+              <a href="pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="contact">Contact</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="vertical-line">
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2020 underlyinglight.com All Rights Reserved</p>
+      </div>
     </footer>
+
+    <div class="mobile-footer" id="page-footer">
+      <div class="mobile-ftr-content" id="mobile-page-div">
+        <div class="mobile-ftr-pages">
+          <a href="/" class="mobile-ftr-logo"><img class="mobile-ftr-logo" src="assets/white-plant.png" alt="pic"></a>
+          <h3>Pages</h3>
+          <ul class="mobile-links" id="mobile-page-links">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="about">About</a>
+            </li>
+            <li>
+              <a href="pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-copyright">
+        <p>© 2020 underlyinglight.com All Rights Reserved</p>
+      </div>
     </div>
+
     </div>
+  </div>
 
   <script src="assets/pages.js/nav.js"></script>
 </body>
