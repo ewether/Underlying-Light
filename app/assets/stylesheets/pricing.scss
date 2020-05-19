@@ -1,9 +1,11 @@
 #pricing-section {
-  height: 54.5em;
-  width: 24em;
-  margin-top: 1em;
-  margin-left: 0em;
+  width: 90%;
+  max-width: 34em;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   padding-top: 1em;
+  padding-bottom: 2em;
   background-color: rgba(255,255,255,0.56);
   border-top: 1px solid transparent;
   display: flex;
@@ -13,14 +15,10 @@
   border-radius: 4px;
 }
 
-#pricing-background {
-  height: 63.5em;
-  text-align: -webkit-center;
-}
-
 .pricing {
+  margin: 0 auto;
   margin-top: -1em;
-  margin-left: 1em;
+  width: 92%;
 }
 
 .pricing-opt {
@@ -41,7 +39,6 @@
 .pricing-p {
   border: 1px solid rgba(0,0,0,0.79);
   border-radius: 4px;
-  width: 20em;
   font-size: 1.1rem;
   text-align: center;
   align-self: center;
@@ -81,13 +78,17 @@ input {
   }
 }
 
+.accordion {
+  width: 96%;
+  margin: 0 auto;
+}
+
 #tabs {
   border-radius: 4px;
   color: white;
   overflow: hidden;
   // box-shadow: 0 4px 4px -2px rgba(0,0,0,0.2);
   margin-top: 1.5em;
-  width: 22em;
 }
 
 #tab1 {
@@ -153,20 +154,14 @@ input:checked {
 }
 
 @media screen and (min-width: 768px) {
-  #pricing-background {
-    height: 62em;
-  }
-
   #pricing-section {
-    width: 45em;
-    height: 38em;
+    width: 92%;
+    max-width: 92%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 2em;
-    margin-bottom: 12em;
-    padding-left: 2em;
-    padding-right: 1em;
+    margin-bottom: 2em;
   }
 
   .tab-label:hover {
@@ -174,7 +169,8 @@ input:checked {
   }
 
   .pricing {
-    // width: 18em;
+    margin: 0 auto;
+    margin-top: -1.3em;
     text-align: -webkit-center;
     h2 {
       font-size: 1.1em;
@@ -188,13 +184,11 @@ input:checked {
   .pricing-p {
     border: 1px solid rgba(0,0,0,0.79);
     border-radius: 4px;
-    height: 26.5em;
-    width: 19em;
+    width: 94%;
   }
 
   .pricing-opt {
     border-bottom: 1px solid rgba(0,0,0,0.79);
-    width: 19em;
     height: 9em;
     padding: 2em 1em;
     h2 {
@@ -224,11 +218,8 @@ input:checked {
   }
 
   .accordion {
-    width: 14em;
-    margin-left: 1em;
     margin-bottom: 4em;
-    // border-top: 1px solid black;
-    // border-bottom: 1px solid black;
+    margin-right: -1em;
   }
 
   .tab-label {
@@ -239,20 +230,17 @@ input:checked {
   }
 
   #tabs {
-    width: 20em;
+    width: 94%;
+    margin: 0 auto;
     margin-top: 3em;
-    margin-left: -6em;
   }
 }
 
 
 @media screen and (min-width: 1024px) {
-  #pricing-background {
-    height: 62em;
-  }
-
   #pricing-section {
-    width: 85em;
+    width: 90%;
+    max-width: 76em;
     height: 38em;
     display: flex;
     flex-direction: row;
@@ -266,7 +254,10 @@ input:checked {
   }
 
   .pricing {
-    width: 41em;
+    width: 90%;
+    max-width: 32em;
+    margin-right: auto;
+    margin-left: 0em;
     text-align: -webkit-center;
     h2 {
       font-size: 1.1em;
@@ -281,12 +272,10 @@ input:checked {
     border: 1px solid rgba(0,0,0,0.79);
     border-radius: 4px;
     height: 25em;
-    width: 28em;
   }
 
   .pricing-opt {
     border-bottom: 1px solid rgba(0,0,0,0.79);
-    width: 28em;
     height: 8.35em;
     padding: 2em 3em;
     h2 {
@@ -315,11 +304,10 @@ input:checked {
   }
 
   .accordion {
-    width: 44em;
-    margin-left: 1em;
+    width: 80%;
+    max-width: 34em;
     margin-bottom: 4em;
-    // border-top: 1px solid black;
-    // border-bottom: 1px solid black;
+    margin-left: auto;
   }
 
   .tab-label {
@@ -330,9 +318,7 @@ input:checked {
   }
 
   #tabs {
-    width: 44em;
     margin-top: 3em;
-    margin-left: -1em;
   }
 }
 

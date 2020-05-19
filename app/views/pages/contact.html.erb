@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
-  <!-- <link href="./resources/css/index.css" type="text/css" rel="stylesheet"> -->
   <title>Contact</title>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
@@ -12,12 +11,10 @@
 
   <div class="container">
    <div class="background" id="contact-background">
-      <header>
-      </header>
-      <nav id="page-nav">
+      <nav class="page-nav">
         <a href="/"><img class="page-logo" src="assets/white-plant.png" alt="pic"></a>
         <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
-        <a href="/" class="name-logo"><h2 class="page-name-logo">Underlying Light</h2></a>
+        <a href="/" class="name-logo"><h2 class="name-logo">Underlying Light</h2></a>
           <ul id="page-nav-links" class="nav-links">
             <li>
               <a href="/">Home</a>
@@ -70,40 +67,85 @@
 
       </section>
 
-    <footer>
-      <div class="footer">
-          <hr class="linebreak" />
+    <footer class="footer">
+      <div class="main-footer-content">
+
+        <div class="footer-logo-div">
+          <div class="footer-logo">
+          <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
+          <a href="/" class="name-logo"><h2 class="name-logo">Underlying Light</h2></a>
+
+          </div>
+          <!-- <h2>Underlying Light</h2> -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aut, id nostrum.</p>
+        </div>
+
+        <div class="vertical-line">
+        </div>
+
         <div class="footer-contact">
-          <!-- <h3>Contact Us</h3> -->
+          <h3>Contact</h3>
           <p><i class="fas fa-phone"></i> (248)705-7423</i></p>
           <p><i class="fas fa-envelope"></i> ewether@gmail.com</p>
           <p><i class="fas fa-clock"></i> Monday - Friday <br> 8:00am - 6:00pm</p>
         </div>
 
-        <ul class="footer-links">
-          <!-- <h3>Pages</h3> -->
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="about">About</a>
-          </li>
-          <li>
-            <a href="pricing">Pricing</a>
-          </li>
-          <li>
-            <a href="contact">Contact</a>
-          </li>
-        </ul>
 
-      </div>
-        <div class="copyright">
-          <small>© 2020 underlyinglight.com All Rights Reserved</small>
+        <div class="footer-page-links">
+          <h3>Pages</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="about">About</a>
+            </li>
+            <li>
+              <a href="pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="contact">Contact</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="vertical-line">
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2020 underlyinglight.com All Rights Reserved</p>
+      </div>
     </footer>
 
+    <div class="mobile-footer" id="page-footer">
+      <div class="mobile-ftr-content" id="mobile-page-div">
+        <div class="mobile-ftr-pages">
+          <a href="/" class="mobile-ftr-logo"><img class="mobile-ftr-logo" src="assets/white-plant.png" alt="pic"></a>
+          <h3>Pages</h3>
+          <ul class="mobile-links" id="mobile-page-links">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="about">About</a>
+            </li>
+            <li>
+              <a href="pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-copyright">
+        <p>© 2020 underlyinglight.com All Rights Reserved</p>
       </div>
     </div>
+
+    </div>
+  </div>
             <script>
               //map options
               function initMap() {
