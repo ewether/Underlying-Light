@@ -28,11 +28,19 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'puma', '>= 3.12.4'
 
-gem 'rack', '>= 2.0.8'
-
 gem 'nokogiri', '>= 1.10.8'
 
-gem 'actionview', '>= 5.2.4.2'
+gem "activestorage", ">= 5.2.4.3"
+
+gem "actionpack", ">= 5.2.4.3"
+
+gem "activesupport", ">= 5.2.4.3"
+
+gem "websocket-extensions", ">= 0.1.5"
+
+gem "rack", ">= 2.2.3"
+
+gem "actionview", ">= 5.2.4.3"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
