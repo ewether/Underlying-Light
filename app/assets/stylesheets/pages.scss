@@ -1,13 +1,8 @@
 $base-spacing: 2em;
-$md-screens: 768px;
-$lg-screens: 1024px;
 $color-dark: rgba(11, 11, 11, 0.9);
+$color-solid-dark: rgba(20, 20, 20, 1);
 $color-light: rgba(255,255,255,0.9);
-$color-mid-light: rgba(255,255,255,0.9);
-
-// @mixin sm-up {
-//   @media (min-width: 300px) { @content; }
-// }
+$color-mid-light: rgba(255,255,255,0.55);
 
 @mixin md-up {
   @media (min-width: 768px) { @content; }
@@ -16,10 +11,6 @@ $color-mid-light: rgba(255,255,255,0.9);
 @mixin lg-up {
   @media (min-width: 1024px) { @content; }
 }
-
-// @mixin xl-up {
-//   @media (min-width: 1440px) { @content; }
-// }
 
 * {
   margin: 0;
@@ -30,33 +21,41 @@ $color-mid-light: rgba(255,255,255,0.9);
   letter-spacing: 2px;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 .container {
-  position: absolute;
+  position: relative;
   overflow-x: hidden;
   left: 0;
   top: 0;
   width: 100%;
+  min-height: 100%;
   height: 100%;
-  background-color: #637177;
+  background-color: rgba(118, 130, 136, 1);
 }
 
 .home {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(18, 18, 18, 0.3), rgba(18, 18, 18, 0.4)), url(massage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
-  @include md-up() {
-      height: 78em;
+  @include lg-up {
+    height: unset;
   }
 }
 
 .mobile-home-section {
-  height: 30em;
+  height: 48vh;
   padding-bottom: 1em;
-  background-color: rgba(255,255,255,0.56);
+  background-color: $color-mid-light;
   @include md-up() {
     background-color: transparent;
   }
@@ -108,9 +107,8 @@ $color-mid-light: rgba(255,255,255,0.9);
     padding: 0em 1em;
   }
   @include md-up() {
-    height: 68%;
+    height: 100%;
     margin: 0;
-    margin-top: 4em;
   }
   @include lg-up() {
     height: 41em;
@@ -121,16 +119,17 @@ $color-mid-light: rgba(255,255,255,0.9);
 }
 
 .home-nav {
-  position: relative;
-  height: 11em;
+  height: 19vh;
   width: 100%;
-  background-color: $color-dark;
+  background-color: $color-solid-dark;
   @include md-up() {
+    background-color: $color-dark;
     display: flex;
-    height: 4em;
+    justify-content: center;
+    height: 8vh;
   }
   @include lg-up() {
-    height: 5em;
+    // height: 5em;
   }
 }
 
@@ -138,38 +137,40 @@ $color-mid-light: rgba(255,255,255,0.9);
   display: flex;
   justify-content: space-around;
   width: 100%;
+  max-width: 850px;
+  height: 45vh;
+  margin-top: $base-spacing/2;
+  margin-right: $base-spacing;
   position: absolute;
-  right: 0px;
-  top: 11em;
-  background-color: $color-dark;
-  height: 31.5em;
+  background-color: $color-solid-dark;
   flex-direction: column;
-  align-items: center;
-  transform: translateX(100%);
+  align-items: flex-end;
+  transform: translateX(200%);
   transition: transform 0.5s ease-in;
   li {
     list-style-type: none;
     opacity: 0;
+    margin-right: $base-spacing*1.5;
   }
   a {
     text-decoration: none;
     color: white;
     letter-spacing: 3px;
     font-weight: 400;
+    font-size: 1.25em;
   }
   @include md-up() {
-    margin-top: -22em;
-    height: 4em;
-    margin-right: 6%;
-    align-self: center;
-    justify-content: flex-end;
+    background-color: $color-dark;
+    margin-top: 0;
+    height: 100%;
+    align-items: center;
     flex-direction: row;
     position: inherit;
     transform: translateX(0%);
     background-color: transparent;
     li {
       opacity: 1;
-      padding-left: 6%;
+      padding-left: $base-spacing/4;
       transform: scale(1);
     }
     a {
@@ -178,16 +179,16 @@ $color-mid-light: rgba(255,255,255,0.9);
     }
   }
   @include lg-up() {
+    width: 60%;
     li {
-      padding-left: 9%;
-      line-height: 6em;
+      padding-left: 8%;
       transition: .1s ease-in-out;
     }
   }
 }
 
 .active {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $color-light;
   padding-bottom: .5em;
   color: black;
 }
@@ -210,6 +211,7 @@ $color-mid-light: rgba(255,255,255,0.9);
     font-family: 'Averia Serif Libre';
     color: white;
     margin-left: -.55em;
+    margin-right: auto;
     display: flex;
     width: 16em;
     align-self: center;
@@ -321,7 +323,7 @@ $color-mid-light: rgba(255,255,255,0.9);
     display: none;
   }
   @include md-up() {
-    background-color: rgba(255,255,255,0.56);
+    background-color: $color-mid-light;
     height: 30em;
     width: 100%;
     display: flex;
@@ -335,7 +337,7 @@ $color-mid-light: rgba(255,255,255,0.9);
     }
   }
   @include lg-up() {
-    background-color: rgba(255,255,255,0.56);
+    background-color: $color-mid-light;
     height: 30em;
     width: 100%;
     display: flex;
@@ -360,6 +362,7 @@ $color-mid-light: rgba(255,255,255,0.9);
   justify-content: space-evenly;
   text-align: center;
   li {
+    padding: $base-spacing/2;
     border-radius: 4px;
     list-style-type: none;
     color: white;
@@ -387,6 +390,7 @@ $color-mid-light: rgba(255,255,255,0.9);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
+    padding: $base-spacing;
     width: 100%;
     text-align: center;
     p {
@@ -394,8 +398,12 @@ $color-mid-light: rgba(255,255,255,0.9);
     }
   }
   @include lg-up() {
+    padding: 0;
     margin-top: 11em;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 1440px) {
+    padding: $base-spacing;
   }
 }
 
@@ -406,7 +414,6 @@ $color-mid-light: rgba(255,255,255,0.9);
 #card-four {
   display: none;
   @include md-up() {
-    display: block;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -429,7 +436,7 @@ $color-mid-light: rgba(255,255,255,0.9);
 }
 
 .card-img {
-  width: 70%;
+  width: 80%;
   border-radius: 4px;
   margin-top: .25em;
   margin-bottom: .25em;
@@ -438,6 +445,12 @@ $color-mid-light: rgba(255,255,255,0.9);
     margin-top: .25em;
     margin-bottom: .25em;
   }
+  @include lg-up {
+    width: 75%;
+  }
+  @media (min-width: 1440px) {
+    width: 60%;
+  }
 }
 
 .card-btn {
@@ -445,7 +458,7 @@ $color-mid-light: rgba(255,255,255,0.9);
   border-color: transparent;
   background-color: $color-light;
   letter-spacing: 2px;
-  margin-bottom: .5em;
+  // margin-bottom: .5em;
   font-weight: 400;
   font-size: 1em;
   height: 3em;
@@ -457,7 +470,7 @@ $color-mid-light: rgba(255,255,255,0.9);
     border-color: transparent;
     background-color: $color-light;
     letter-spacing: 2px;
-    margin-bottom: .5em;
+    // margin-bottom: .5em;
     font-weight: 400;
     font-size: 1em;
     height: 3em;
@@ -468,14 +481,8 @@ $color-mid-light: rgba(255,255,255,0.9);
 }
 
 .card-btn:hover {
-  background-color: $color-light;
+  background-color: darken($color-light, 10%);
   cursor: pointer;
-  transform: scale(1.02);
-  @include md-up() {
-    background-color: $color-light;
-    cursor: pointer;
-    transform: scale(1.02);
-  }
 }
 
 .nav-active {
@@ -509,14 +516,14 @@ $color-mid-light: rgba(255,255,255,0.9);
   display: none;
   @include md-up() {
     display: block;
-    background-color: #222222;
+    background-color: $color-solid-dark;
     height: 16em;
   }
 }
 
 .mobile-footer {
   height: 8em;
-  background-color: #222222;
+  background-color: $color-dark;
   @include md-up() {
     display: none;
   }
@@ -525,7 +532,7 @@ $color-mid-light: rgba(255,255,255,0.9);
 .mobile-ftr-logo {
   height: 2.5em;
   margin-top: -.7em;
-  margin-left: -2em;
+  margin-left: $base-spacing*-1.8;
   position: absolute;
 }
 
@@ -565,13 +572,7 @@ $color-mid-light: rgba(255,255,255,0.9);
 
 .nav-links a:hover {
   @include md-up() {
-    border-bottom: 1px solid white;
-  }
-}
-
-.nav-links li:hover {
-  @include md-up() {
-    transform: scale(1.01);
+    border-bottom: 1px solid $color-light;
   }
 }
 
@@ -585,7 +586,7 @@ $color-mid-light: rgba(255,255,255,0.9);
   @include md-up() {
     width: 20em;
     height: 2em;
-    border-bottom: 1.5px solid white;
+    border-bottom: 1.5px solid $color-light;
     text-align: center;
     display: block;
     font-family: 'Averia Serif Libre';
@@ -602,8 +603,7 @@ $color-mid-light: rgba(255,255,255,0.9);
 
 .book-btn:hover {
   @include md-up() {
-    background-color: rgba(12,12,12,0.4);
-    transform: scale(1.01);
+    background-color: darken($color-light, 10%);
   }
 }
 
@@ -618,7 +618,7 @@ $color-mid-light: rgba(255,255,255,0.9);
     width: 36%;
     margin-top: 1.5em;
     margin-bottom: 2em;
-    border: .5px solid white;
+    border: .5px solid $color-light;
   }
 }
 
@@ -678,7 +678,7 @@ $color-mid-light: rgba(255,255,255,0.9);
 
 .vertical-line {
   @include md-up() {
-    border-left: .5px solid rgba(255, 255, 255, 0.3);
+    border-left: .5px solid $color-light;
     height: 12em;
     margin-top: 1em;
   }
@@ -704,13 +704,7 @@ $color-mid-light: rgba(255,255,255,0.9);
 
 .footer-page-links a:hover {
   @include md-up() {
-    border-bottom: 1px solid white;
-  }
-}
-
-.footer-page-links li:hover {
-  @include md-up() {
-    transform: scale(1.02);
+    border-bottom: 1px solid $color-light;
   }
 }
 
@@ -730,8 +724,6 @@ $color-mid-light: rgba(255,255,255,0.9);
     margin-right: 3%;
   }
 }
-
-
 
 
 
