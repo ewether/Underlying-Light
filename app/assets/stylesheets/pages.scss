@@ -1,249 +1,5 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-// font-size: use rem
-// padding & margin: use em
-// widths: em or %
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-
-.container {
-  position: absolute;
-  overflow-x: hidden;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #637177;
-}
-
-.home-background {
-  height: 80%;
-  width: 100%;
-  background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.4)), url(massage.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-
-nav {
-  position: relative;
-  height: 11em;
-  width: 100%;
-  background-color: rgba(0,0,0,0.65);
-}
-
-.white-logo {
-  display: flex;
-  justify-content: center;
-  img {
-    margin-top: 1.2em;
-    height: 9em;
-  }
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  position: absolute;
-  right: 0px;
-  top: 11em;
-  background-color: rgba(0,0,0,0.65);
-  height: 30em;
-  flex-direction: column;
-  align-items: center;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in;
-  li {
-    list-style-type: none;
-    opacity: 0;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 1.1em;
-    font-weight: 400;
-  }
-}
-
-.active {
-  border-bottom: 1px solid white;
-  padding-bottom: .5em;
-}
-
-.name-logo {
-  display: none;
-}
-
-.white-plant {
-  display: none;
-}
-
-.laptop-logo {
-  display: none;
-}
-
-.heading-two {
-  display: none;
-}
-
-.burger {
-  display: block;
-  text-align: -webkit-right;
-  margin-right: 1em;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-.home-section {
-  width: 92%;
-  margin: 0 auto;
-  margin-top: 1.5em;
-  display: flex;
-  flex-direction: column;
-}
-
-.home-main-section {
-  height: 60%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 400;
-  }
-  p {
-    width: 96%;
-    font-size: 1.2rem;
-    line-height: 1.5em;
-    text-align: center;
-    font-weight: 400;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 0em 1em;
-  }
-}
-
-.mobile-home-section {
-  height: 30em;
-  padding-bottom: 1em;
-  background-color: rgba(255,255,255,0.56);
-}
-
-.mobile-section {
-  text-align: -webkit-center;
-}
-
-.home-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 11em;
-}
-
-.home-border {
-  margin-top: 2em;
-  margin-bottom: .5em;
-  width: 80%;
-  max-width: 20em;
-  border-bottom: 1px solid black;
-}
-
-.book-btn {
-  background-color: rgba(0,0,0,0.79);
-  color: white;
-  border: thin solid rgba(0,0,0,0.79);
-  border-radius: 4px;
-  font-size: 1em;
-  font-weight: 400;
-  height: 3em;
-  width: 100%;
-  padding: 0 1em;
-  cursor: pointer;
-}
-
-.contact-icons {
-  p {
-    margin-bottom: 1em;
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 400;
-  }
-  h2 {
-    display: none;
-  }
-}
-
-.active, .btn:hover {
-  color: black;
-}
-
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-.home-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: .5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  li {
-    border-radius: 4px;
-    list-style-type: none;
-    color: white;
-    height: 30em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgba(0,0,0,0.65);
-  }
-  h2 {
-    font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: 3px;
-    margin-top: 1em;
-  }
-  p {
-    width: 80%;
-    font-weight: 300;
-    font-size: .95em;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-}
-
-#card-four {
-  display: none;
-}
-
 .card-img {
-  width: 21em;
+  width: 70%;
   border-radius: 4px;
   margin-top: .25em;
   margin-bottom: .25em;
@@ -267,12 +23,6 @@ nav {
   background-color: rgba(255,255,255,0.95);
   cursor: pointer;
   transform: scale(1.02);
-}
-
-.home-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
 }
 
   .nav-active {
@@ -308,7 +58,7 @@ nav {
 
 .mobile-footer {
   height: 8em;
-  background-color: #2b2b2b;
+  background-color: #222222;
 }
 
 .mobile-ftr-logo {
@@ -353,60 +103,6 @@ nav {
 }
 
 @media screen and (min-width:768px) {
-  .section {
-    width: 100%;
-    margin-left: 0em;
-    margin-top: 0;
-    background-color: transparent;
-    justify-content: normal;
-  }
-
-  .home-background {
-    height: 76em;
-    background-image: linear-gradient(rgba(26, 26, 26, 0.4), rgba(25, 25, 25, 0.1), rgba(26, 26, 26, 0.4)), url(massage.jpg);
-  }
-
-  .mobile-home-section {
-    background-color: transparent;
-  }
-
-  .home-main-section {
-    height: 68%;
-    margin: 0;
-    margin-top: 4em;
-  }
-
-  .burger {
-    display: none;
-  }
-
-  nav {
-    display: flex;
-    height: 4em;
-    background-color: rgba(0,0,0,0.56);
-  }
-
-  .nav-links {
-    width: 100%;
-    margin-top: -22em;
-    height: 4em;
-    margin-right: 6%;
-    align-self: center;
-    justify-content: flex-end;
-    flex-direction: row;
-    position: inherit;
-    transform: translateX(0%);
-    background-color: transparent;
-    li {
-      opacity: 1;
-      padding-left: 6%;
-      transform: scale(1);
-    }
-    a {
-      font-size: 1em;
-      padding-bottom: .5em;
-    }
-  }
 
   .nav-links a:hover {
     border-bottom: 1px solid white;
@@ -418,38 +114,6 @@ nav {
 
   .background {
     height: 76em;
-  }
-
-  .white-logo {
-    display: none;
-  }
-
-  .white-plant {
-    display: block;
-    height: 2.8em;
-    align-self: center;
-    margin-left: 6%;
-    margin-bottom: .7em;
-  }
-
-  .name-logo {
-    font-family: 'Averia Serif Libre';
-    color: white;
-    margin-left: -.55em;
-    display: flex;
-    width: 16em;
-    align-self: center;
-    text-decoration: none;
-  }
-
-  .laptop-logo {
-    display: block;
-    height: 12em;
-    margin-left: 2em;
-  }
-
-  .home-border {
-    display: none;
   }
 
   .heading-two {
@@ -465,26 +129,9 @@ nav {
     color: white;
   }
 
-  .book-btn {
-    margin-top: 1.5em;
-    color: white;
-    background-color: rgba(0,0,0,0.3);
-    border: 2px solid white;
-    font-weight: 400;
-    letter-spacing: 2px;
-    width: 16em;
-    height: 2.8em;
-    transform: scale(1);
-    transition: .1s ease-in-out;
-  }
-
   .book-btn:hover {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(12,12,12,0.4);
     transform: scale(1.01);
-  }
-
-  .mobile-section {
-    display: none;
   }
 
   .linebreak {
@@ -496,51 +143,6 @@ nav {
     margin-top: 1.5em;
     margin-bottom: 2em;
     border: .5px solid white;
-  }
-
-  .contact-icons {
-    background-color: rgba(255,255,255,0.56);
-    height: 30em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    h2 {
-      display: block;
-      font-weight: 400;
-      margin-bottom: 2em;
-      margin-top: 2em;
-    }
-  }
-
-  .home-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-    width: 100%;
-    text-align: center;
-    p {
-      width: 80%;
-    }
-  }
-
-  #card-four {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.25em;
-    height: inherit;
-    text-align: center;
-    h2 {
-      margin-bottom: 1em;
-      margin-top: -1em;
-    }
-    p {
-      line-height: 2em;
-      width: 100%;
-      margin: 0em;
-    }
   }
 
   .card-img {
@@ -569,17 +171,13 @@ nav {
     transform: scale(1.02);
   }
 
-  .home-contact {
-    display: none;
-  }
-
   .mobile-footer {
     display: none;
   }
 
   .footer {
     display: block;
-    background-color: #2b2b2b;
+    background-color: #222222;
     height: 16em;
   }
 
@@ -667,101 +265,12 @@ nav {
 
 // laptop screen
 @media screen and (min-width:1024px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    letter-spacing: 2px;
-  }
-
-  .home-section {
-    width: 100%;
-    margin-left: 0em;
-    margin-top: 0;
-    background-color: transparent;
-    justify-content: normal;
-  }
-
-  .home-background {
-    height: 78em;
-  }
-
-  .home-main-section {
-    height: 41em;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .burger {
-    display: none;
-  }
-
-  nav {
-    display: flex;
-    height: 5em;
-    background-color: rgba(0,0,0,0.56);
-  }
-
-  .nav-links {
-    width: 100%;
-    height: 4em;
-    margin-right: 7%;
-    align-self: center;
-    justify-content: flex-end;
-    flex-direction: row;
-    position: inherit;
-    transform: translateX(0%);
-    background-color: transparent;
-    li {
-      opacity: 1;
-      padding-left: 9%;
-      line-height: 6em;
-      transform: scale(1);
-      transition: .1s ease-in-out;
-    }
-    a {
-      font-size: 1em;
-      padding-bottom: .5em;
-    }
-  }
-
   .nav-links a:hover {
     border-bottom: 1px solid white;
   }
 
   .nav-links li:hover {
     transform: scale(1.01);
-  }
-
-  .white-logo {
-    display: none;
-  }
-
-  .white-plant {
-    display: block;
-    height: 2.8em;
-    align-self: center;
-    margin-left: 7%;
-    margin-bottom: .7em;
-  }
-
-  .name-logo {
-    font-family: 'Averia Serif Libre';
-    color: white;
-    margin-left: -.55em;
-    display: flex;
-    width: 16em;
-    align-self: center;
-    text-decoration: none;
-  }
-
-  .laptop-logo {
-    display: block;
-    height: 12em;
-    margin-left: 4.75em;
   }
 
   .heading-two {
@@ -777,62 +286,9 @@ nav {
     color: white;
   }
 
-  .home-border {
-    display: none;
-  }
-
-  .book-btn {
-    color: white;
-    background-color: rgba(0,0,0,0.3);
-    border: 2px solid white;
-    font-weight: 400;
-    letter-spacing: 2px;
-    width: 16em;
-    height: 2.8em;
-    transform: scale(1);
-    transition: .1s ease-in-out;
-  }
-
-  .book-btn:hover {
-    background-color: rgba(0,0,0,0.4);
-    transform: scale(1.01);
-  }
-
-  .mobile-section {
-    display: none;
-  }
-
-  .contact-icons {
-    background-color: rgba(255,255,255,0.56);
-    height: 30em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    h2 {
-      display: block;
-      font-weight: 400;
-      margin-bottom: 2em;
-      margin-top: 2em;
-    }
-  }
-
   .card-section {
     margin-left: 3%;
     margin-right: 3%;
-  }
-
-  .home-cards {
-    margin-top: 11em;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #card-four {
-    display: none;
-  }
-
-  .home-contact {
-    display: none;
   }
 
   .footer {
