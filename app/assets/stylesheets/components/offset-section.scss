@@ -1,0 +1,59 @@
+$base-spacing: 2em;
+$color-dark: rgba(11, 11, 11, 0.9);
+$color-solid-dark: rgba(20, 20, 20, 1);
+$color-light: rgba(255,255,255,0.9);
+$color-mid-light: rgba(255,255,255,0.55);
+$color-greyish: rgba(139, 157, 163, 1);
+
+section.offset-section {
+  height: 50%;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(rgba(27, 35, 37, 0.7), rgba(20, 20, 20, 0.7)), url(/assets/massage2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .offset-container {
+    background-color: transparent;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .offset-body {
+      width: 50%;
+
+      h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+        text-transform: capitalize;
+
+        span {
+          font-size: 1.8em;
+          font-weight: 200;
+        }
+      }
+
+      p {
+        margin-top: $base-spacing;
+        line-height: 1.4em;
+      }
+
+      button {
+        margin-top: $base-spacing;
+      }
+    }
+
+    .offset-image {
+      width: 48%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
