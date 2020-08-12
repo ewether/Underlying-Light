@@ -3,7 +3,7 @@ $color-dark: rgba(11, 11, 11, 0.9);
 $color-solid-dark: rgba(20, 20, 20, 1);
 $color-light: rgba(255,255,255,0.9);
 $color-mid-light: rgba(255,255,255,0.55);
-$color-greyish: rgba(60, 70, 73, 1);
+$color-greyish: rgba(139, 157, 163, 1);
 
 @mixin md-up {
   @media (min-width: 768px) { @content; }
