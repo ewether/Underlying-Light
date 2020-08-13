@@ -4,7 +4,7 @@ $color-solid-dark: rgba(20, 20, 20, 1);
 $color-light: rgba(255,255,255,0.9);
 $color-light-internal: rgba(255,255,255,0.8);
 $color-mid-light: rgba(255,255,255,0.55);
-$color-greyish: rgba(60, 70, 73, 1);
+$color-greyish: rgba(139, 157, 163, 1);
 
 @mixin md-up {
   @media (min-width: 768px) { @content; }
@@ -119,66 +119,62 @@ body {
   right: 0;
 }
 
-.about {
-  padding: $base-spacing;
-  width: 92%;
-  max-width: 1200px;
-  border-radius: 4px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 1.5em;
-  background-color: $color-light-internal;
-  h1 {
-    margin-bottom: $base-spacing;
-    font-weight: 400;
-  }
-  @include md-up {
-    padding: $base-spacing*2;
-    border-radius: 4px;
-    margin-left: auto;
-    background-color: $color-light-internal;
-    width: 60%;
-    text-align: -webkit-center;
-    p {
-      line-height: 1.5em;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 $base-spacing*4;
-      font-size: 1.1em;
-    }
-  }
-  @include lg-up {
-    width: 100%;
-    margin-right: 1em;
-    p {
-      width: 90%;
-      max-width: 950px;
-    }
-  }
-}
+section.about-section {
+  padding: $base-spacing*2;
+  margin: 0;
 
-.about-aside {
-  display: none;
-  color: white;
-  @include md-up {
+  .about {
+    padding: $base-spacing*3 $base-spacing;
     border-radius: 4px;
-    background-color: $color-greyish;
-    max-width: 18em;
-    height: auto;
-    margin-left: 1em;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    ul {
-      list-style-type: none;
-    }
-    h3 {
+    text-align: center;
+    margin: 0 auto;
+    background-color: $color-light-internal;
+    h1 {
       font-weight: 400;
-      line-height: 2em;
+    }
+    @include md-up {
+      border-radius: 4px;
+      background-color: $color-light-internal;
+      width: 60%;
+      text-align: -webkit-center;
+      p {
+        line-height: 1.5em;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.1em;
+      }
+    }
+    @include lg-up {
+      width: 100%;
+      p {
+        padding: $base-spacing $base-spacing*4;
+      }
     }
   }
-  @include lg-up {
-    margin-right: auto;
+
+  .about-aside {
+    // background-image: linear-gradient(rgba(139, 157, 163, 0.3), rgba(139, 157, 163, 0.4)), url(/assets/rocks.jpg);
+    display: none;
+    color: white;
+    @include md-up {
+      border-radius: 4px;
+      background-color: $color-greyish;
+      max-width: 18em;
+      height: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        list-style-type: none;
+      }
+      h3 {
+        font-weight: 400;
+        line-height: 2em;
+      }
+    }
+    @include lg-up {
+      margin-right: auto;
+    }
   }
 }
 
@@ -288,41 +284,6 @@ body {
   }
 }
 
-section.about-highlight {
-  height: auto;
-  width: 100%;
-  background-color: $color-light;
-  text-align: center;
-  padding: $base-spacing*2 $base-spacing/2;
-
-    h2 {
-      font-size: 2em;
-    }
-
-  .highlight-body {
-    display: flex;
-    justify-content: space-between;
-    padding: $base-spacing*1.5 0;
-
-    .highlight-card {
-      height: 40vh;
-      width: 33%;
-      background-color: $color-greyish;
-      // background-image: linear-gradient(rgba(60, 70, 73, 0.2), rgba(60, 70, 73, 0.5)), url(clouds.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    #highlight-card-1 {
-      margin-right: $base-spacing/2;
-    }
-
-    #highlight-card-3 {
-      margin-left: $base-spacing/2;
-    }
-  }
-}
 
 
 

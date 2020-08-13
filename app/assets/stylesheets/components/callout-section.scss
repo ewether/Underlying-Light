@@ -1,0 +1,116 @@
+$base-spacing: 2em;
+$color-dark: rgba(11, 11, 11, 0.825);
+$color-solid-dark: rgba(20, 20, 20, 1);
+$color-light: rgba(255,255,255,0.9);
+$color-light-internal: rgba(255,255,255,0.8);
+$color-mid-light: rgba(255,255,255,0.55);
+$color-greyish: rgba(139, 157, 163, 1);
+
+@mixin md-up {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin lg-up {
+  @media (min-width: 1024px) { @content; }
+}
+
+section.callout-section {
+  height: 80vh;
+  width: 100%;
+  color: white;
+
+  .callout-container {
+    padding: $base-spacing*4 0 $base-spacing*2;
+    height: 100%;
+    background-color: $color-greyish;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .callout-body {
+      text-align: center;
+
+      h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+        span {
+          font-size: 1.4em;
+        }
+      }
+      button {
+        background-color: $color-dark;
+        color: white;
+        border: transparent;
+        border-radius: 4px;
+        font-size: 1em;
+        font-weight: 400;
+        height: 3em;
+        // width: 80%;
+        padding: 0 2em;
+        cursor: pointer;
+        text-transform: capitalize;
+        @include md-up() {
+          margin-top: 1.5em;
+          color: black;
+          background-color: $color-light;
+          border-color: transparent;
+          font-weight: 400;
+          letter-spacing: 2px;
+          // width: 16em;
+          // height: 2.8em;
+          transform: scale(1);
+          transition: .1s ease-in-out;
+        }
+      }
+    }
+    .callout-cards {
+      display: flex;
+      justify-content: space-evenly;
+
+      .callout-card {
+        height: 12em;
+        width: 22%;
+        padding: $base-spacing;
+        background-color: $color-greyish;
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/deep-tissue.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      #callout-card-1 {
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight1.jpg);
+        // margin-right: $base-spacing/2;
+      }
+
+      #callout-card-3 {
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight2.jpg);
+        // margin-left: $base-spacing/2;
+      }
+
+      #callout-card-4 {
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/oil.jpg);
+        // margin-left: $base-spacing/2;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

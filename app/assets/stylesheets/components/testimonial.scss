@@ -26,7 +26,7 @@ section.testimonial {
     max-width: unset;
   }
   @include lg-up {
-    padding: $base-spacing*3 $base-spacing;
+    padding: $base-spacing*5 $base-spacing;
   }
 
   h2 {
