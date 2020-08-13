@@ -1,0 +1,52 @@
+$base-spacing: 2em;
+$color-dark: rgba(11, 11, 11, 0.825);
+$color-solid-dark: rgba(30, 30, 30, 1);
+$color-light: rgba(255,255,255,0.9);
+$color-mid-light: rgba(255,255,255,0.55);
+$color-greyish: rgba(139, 157, 163, 1);
+
+@mixin md-up {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin lg-up {
+  @media (min-width: 1024px) { @content; }
+}
+
+section.highlight-cards {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: $base-spacing*2 0;
+  color: white;
+
+    h2 {
+      font-size: 2em;
+    }
+
+  .highlight-body {
+    display: flex;
+    // justify-content: space-between;
+    // padding: $base-spacing*1.5 0;
+
+    .highlight-card {
+      height: 40vh;
+      width: 33.3%;
+      background-color: $color-greyish;
+      // background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/deep-tissue.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    #highlight-card-1 {
+      // background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight1.jpg);
+      // margin-right: $base-spacing/2;
+    }
+
+    #highlight-card-3 {
+      // background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight2.jpg);
+      // margin-left: $base-spacing/2;
+    }
+  }
+}
