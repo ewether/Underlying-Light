@@ -15,13 +15,11 @@ $color-greyish: rgba(139, 157, 163, 1);
 }
 
 section.callout-section {
-  height: 80vh;
   width: 100%;
   color: white;
 
   .callout-container {
     padding: $base-spacing*4 0 $base-spacing*2;
-    height: 100%;
     background-color: $color-greyish;
     display: flex;
     flex-direction: column;
@@ -36,6 +34,8 @@ section.callout-section {
         font-size: 1.4em;
         span {
           font-size: 1.4em;
+          margin: $base-spacing/4 0 $base-spacing/2;
+
         }
       }
       button {
@@ -43,11 +43,10 @@ section.callout-section {
         color: white;
         border: transparent;
         border-radius: 4px;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 400;
-        height: 3em;
-        // width: 80%;
-        padding: 0 2em;
+        // height: 3em;
+        padding: 1em 2em;
         cursor: pointer;
         text-transform: capitalize;
         @include md-up() {
@@ -57,20 +56,20 @@ section.callout-section {
           border-color: transparent;
           font-weight: 400;
           letter-spacing: 2px;
-          // width: 16em;
-          // height: 2.8em;
           transform: scale(1);
           transition: .1s ease-in-out;
         }
       }
     }
     .callout-cards {
+      padding-top: $base-spacing*4;
       display: flex;
       justify-content: space-evenly;
 
       .callout-card {
         height: 12em;
         width: 22%;
+        max-width: 350px;
         padding: $base-spacing;
         background-color: $color-greyish;
         background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/deep-tissue.jpg);
@@ -81,17 +80,14 @@ section.callout-section {
 
       #callout-card-1 {
         background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight1.jpg);
-        // margin-right: $base-spacing/2;
       }
 
       #callout-card-3 {
         background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight2.jpg);
-        // margin-left: $base-spacing/2;
       }
 
       #callout-card-4 {
         background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/oil.jpg);
-        // margin-left: $base-spacing/2;
       }
     }
   }
