@@ -19,11 +19,15 @@ section.callout-section {
   color: white;
 
   .callout-container {
-    padding: $base-spacing*4 0 $base-spacing*2;
+    padding: $base-spacing*2 $base-spacing;
     background-color: $color-greyish;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include md-up {
+      padding: $base-spacing*4 0 $base-spacing*2;
+    }
 
     .callout-body {
       text-align: center;
@@ -45,7 +49,6 @@ section.callout-section {
         border-radius: 4px;
         font-size: 1.2em;
         font-weight: 400;
-        // height: 3em;
         padding: 1em 2em;
         cursor: pointer;
         text-transform: capitalize;
@@ -62,13 +65,19 @@ section.callout-section {
       }
     }
     .callout-cards {
-      padding-top: $base-spacing*4;
+      padding-top: $base-spacing*2;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @include md-up {
+        padding-top: $base-spacing*4;
+        justify-content: space-evenly;
+      }
 
       .callout-card {
         height: 12em;
-        width: 22%;
+        width: 50%;
         max-width: 350px;
         padding: $base-spacing;
         background-color: $color-greyish;
@@ -76,6 +85,9 @@ section.callout-section {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        @include md-up {
+          width: 22%;
+        }
       }
 
       #callout-card-1 {

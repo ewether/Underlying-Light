@@ -67,52 +67,6 @@ body {
   }
 }
 
-#page-nav-links {
-  z-index: 10;
-  @include md-up {
-    width: 100%;
-    height: 4em;
-    margin-right: 6%;
-    align-self: center;
-    justify-content: flex-end;
-    flex-direction: row;
-    position: inherit;
-    transform: translateX(0%);
-    background-color: transparent;
-    li {
-      opacity: 1;
-      padding-left: 6%;
-      transform: scale(1);
-    }
-    a {
-      font-size: 1em;
-      padding-bottom: .5em;
-    }
-  }
-  @include lg-up {
-    width: 100%;
-    height: 4em;
-    margin-right: 7%;
-    align-self: center;
-    justify-content: flex-end;
-    flex-direction: row;
-    position: inherit;
-    transform: translateX(0%);
-    background-color: transparent;
-    li {
-      opacity: 1;
-      padding-left: 9%;
-      line-height: 6em;
-      transform: scale(1);
-      transition: .1s ease-in-out;
-    }
-    a {
-      font-size: 1em;
-      padding-bottom: .5em;
-    }
-  }
-}
-
 #page-burger {
   margin-top: -1.2em;
   position: absolute;
@@ -120,173 +74,78 @@ body {
 }
 
 section.about-section {
-  padding: $base-spacing*2;
-  margin: 0;
+  padding: $base-spacing*2 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
 
-    @include md-up {
-      background-color: transparent;
-      width: 90%;
-      margin: 0 auto;
-      margin-top: 2em;
-      margin-bottom: .5em;
-      display: flex;
-      flex-direction: row;
-    }
-    @include lg-up {
-      width: 100%;
-      max-width: 1500px;
-    }
+  @include lg-up {
+    flex-direction: row;
+  }
 
   .about {
     border-radius: 4px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 $base-spacing 0 auto;
     background-color: $color-light-internal;
+    width: 100%;
+    padding: $base-spacing*3 0 $base-spacing*2;
     h1 {
       font-weight: 400;
     }
-    @include md-up {
-      padding: $base-spacing $base-spacing;
-      border-radius: 4px;
-      background-color: $color-light-internal;
-      width: 60%;
-      text-align: -webkit-center;
-      font-size: 1.25em;
-      p {
-        line-height: 1.5em;
-        width: 100%;
-        margin: 0 auto;
-        font-size: .9em;
-      }
-    }
-    @include lg-up {
-      padding: $base-spacing*2.5 $base-spacing;
-      width: 100%;
-      h1 {
-        margin-bottom: $base-spacing/1.5;
-      }
-      p {
-        padding: 0 $base-spacing*4;
-      }
+    p {
+      padding: $base-spacing $base-spacing 0;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.5em;
     }
   }
 
   .about-aside {
-    display: none;
-    color: white;
-    @include md-up {
-      border-radius: 4px;
-      margin-left: $base-spacing;
-      background-color: darken($color-greyish, 15%);
-      max-width: 400px;
-      height: auto;
-      margin-right: auto;
-      display: flex;
-      justify-content: space-between;
-      ul {
-        list-style-type: none;
-      }
-      h3 {
-        font-weight: 400;
-        line-height: 2em;
-      }
-    }
-    @include lg-up {
-      margin-right: auto;
-    }
-  }
-}
-
-#page-footer {
-  height: 9em;
-}
-
-#mobile-page-div {
-  padding-top: 1em;
-}
-
-.nav-links a:hover {
-  @include md-up {
-    border-bottom: 1px solid $color-light;
-  }
-}
-
-.nav-links li:hover {
-  @include md-up {
-    transform: scale(1.01);
-  }
-}
-
-#page-name-logo {
-  @include md-up {
-    font-family: 'Averia Serif Libre';
-    color: white;
-    margin-left: -.55em;
-    display: flex;
-    width: 16em;
-    align-self: center;
-    text-decoration: none;
-    letter-spacing: 2.9px;
-    font-size: 1.54em;
-  }
-}
-
-.about-info {
-  height: 100%;
-  width: 100%;
-  padding: $base-spacing*1.5 $base-spacing/2;
-  @include md-up {
-    align-items: center;
+    padding: $base-spacing*1.5 $base-spacing;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    line-height: 2em;
+    justify-content: center;
+    background-color: darken($color-greyish, 15%);
+    color: white;
+    line-height: 1.5;
+
+    .about-contact {
+      border-top: 2px solid $color-light;
+
+      .contact-content {
+        padding: $base-spacing*1.5 0 0;
+      }
+      h3 {
+        margin-bottom: $base-spacing/2;
+        font-weight: bold;
+      }
+    }
+
+    .about-services {
+      position: relative;
+      border-bottom: 2px solid $color-light;
+
+      .services-content {
+        padding: $base-spacing 0 $base-spacing*1.5;
+
+        .service {
+          display: flex;
+          justify-content: space-between;
+          max-width: 300px;
+        }
+      }
+      h3 {
+        margin-bottom: $base-spacing/2;
+        font-weight: bold;
+      }
+    }
   }
 }
 
-.about-contact {
-  padding: $base-spacing*2 $base-spacing/2 $base-spacing/4;
-  width: 100%;
-  @include md-up {
-    border-top: 1px solid $color-light;
-  }
-}
 
-.about-services {
-  display: flex;
-  flex-direction: column;
-  padding: $base-spacing/2 $base-spacing/2 $base-spacing/4;
-  width: 100%;
-
-  .service {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-#about-btn {
-  @include md-up {
-    height: 3em;
-    margin-bottom: 1em;
-    width: 15em;
-    background-color: $color-light;
-  }
-}
-
-#about-btn:hover {
-  @include md-up {
-    background-color: darken($color-light, 15%);
-  }
-}
-
-.about-buttons {
-  @include md-up {
-    padding: $base-spacing*3 $base-spacing/2 $base-spacing*1.25;
-    border-bottom: 1px solid $color-light;
-    text-align: center;
-  }
-}
 
 
 
