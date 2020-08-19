@@ -28,6 +28,7 @@ section.pricing-section {
   display: flex;
   padding: $base-spacing*2;
   margin: 0;
+  flex-direction: column;
 
     @include md-up {
       background-color: transparent;
@@ -35,7 +36,6 @@ section.pricing-section {
       margin: 0 auto;
       margin-top: 2em;
       margin-bottom: .5em;
-      display: flex;
       flex-direction: row;
     }
     @include lg-up {
@@ -43,22 +43,18 @@ section.pricing-section {
       max-width: 1500px;
     }
 
-  .accordion {
-    width: 35%;
-    color: white;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-
   .pricing {
-    width: 65%;
+    width: 45%;
     margin-left: $base-spacing;
     border-radius: 4px;
-    background-color: $color-light-internal;
-    padding: $base-spacing*3 $base-spacing;
+    background-color: darken($color-greyish, 15%);
+    padding: $base-spacing*2 $base-spacing;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
 
     h1 {
-      color: black;
       width: 100%;
       margin-bottom: $base-spacing/1.5;
       font-size: 30px;
@@ -69,11 +65,12 @@ section.pricing-section {
     .pricing-options {
       display: flex;
       justify-content: space-evenly;
+      flex-direction: column;
 
       #pricing-opt-2 {
-        border-left: 1px solid $color-dark;
-        border-right: 1px solid $color-dark;
-        padding: 0 $base-spacing;
+        border-top: 2px solid $color-light;
+        border-bottom: 2px solid $color-light;
+        padding: $base-spacing 0;
       }
 
       .pricing-opt {
@@ -91,25 +88,17 @@ section.pricing-section {
   }
 }
 
-  // .pricing-image {
-  //   width: 100%;
-  //   max-width: 1500px;
-  //   margin: auto;
-  //   height: 200px;
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   background-image: linear-gradient(rgba(180, 190, 194, 0.1), rgba(18, 18, 18, 0.3)), url(oil.jpg);
-  // }
-
-
-
-
+.accordion {
+  width: 55%;
+  color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
 
 .tab-heading {
   width: 100%;
   font-size: 30px;
-  padding-top: $base-spacing*1.5;
+  padding-top: $base-spacing;
   text-align: center;
   background-color: $color-dark;
 }
@@ -148,7 +137,6 @@ input {
     padding: $base-spacing*1.25;
     font-weight: bold;
     cursor: pointer;
-    /* Icon */
     &:hover {
     }
     &::after {
@@ -175,7 +163,6 @@ input {
   }
 }
 
-// :checked
 input:checked {
   + .tab-label {
     &::after {
@@ -188,11 +175,85 @@ input:checked {
   }
 }
 
-  .tab-label:hover {
-    background-color: rgba(0,0,0,0.75);
-  }
+.tab-label:hover {
+  background-color: rgba(0,0,0,0.75);
+}
 
 
+
+
+
+// .form {
+//   width:340px;
+//   height:440px;
+//   background:#e6e6e6;
+//   border-radius:8px;
+//   box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;
+//   padding: $base-spacing;
+//   box-sizing:border-box;
+//   font-family:'Montserrat',sans-serif;
+//   position:relative;
+//     h2 {
+//     margin:10px 0;
+//     padding-bottom:10px;
+//     width:180px;
+//     color:#78788c;
+//     border-bottom:3px solid #78788c;
+//   }
+//   input {
+//     width:100%;
+//     padding:10px;
+//     box-sizing:border-box;
+//     background:none;
+//     outline:none;
+//     resize:none;
+//     border:0;
+//     font-family:'Montserrat',sans-serif;
+//     transition:all .3s;
+//     border-bottom:2px solid #bebed2;
+//   }
+//   input:focus {
+//     border-bottom:2px solid #78788c;
+//   }
+//   p:before {
+//     content:attr(type);
+//     display:block;
+//     margin:28px 0 0;
+//     font-size:14px;
+//     color:#5a5a5a;
+//   }
+//   button {
+//     float:right;
+//     padding:8px 12px;
+//     margin:8px 0 0;
+//     font-family:'Montserrat',sans-serif;
+//     border:2px solid #78788c;
+//     background:0;
+//     color:#5a5a6e;
+//     cursor:pointer;
+//     transition:all .3s;
+//   }
+//   button:hover {
+//     background:#78788c;
+//     color:#fff;
+//   }
+//   // div {
+//   //   content:'Hi';
+//   //   position:absolute;
+//   //   bottom:-15px;
+//   //   right:-20px;
+//   //   background:#50505a;
+//   //   color:#fff;
+//   //   width:320px;
+//   //   padding:16px 4px 16px 0;
+//   //   border-radius:6px;
+//   //   font-size:13px;
+//   //   box-shadow:10px 10px 40px -14px #000;
+//   // }
+//   span{
+//     margin:0 5px 0 15px;
+//   }
+// }
 
 
 
