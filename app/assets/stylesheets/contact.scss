@@ -1,223 +1,166 @@
-#contact-icons {
-  height: 9em;
-  margin-bottom: 2em;
-  margin-top: 1em;
+$base-spacing: 2em;
+$color-dark: rgba(11, 11, 11, 0.825);
+$color-solid-dark: rgba(20, 20, 20, 1);
+$color-light: rgba(255,255,255,0.9);
+$color-light-internal: rgba(255,255,255,0.8);
+$color-mid-light: rgba(255,255,255,0.55);
+$color-greyish: rgba(139, 157, 163, 1);
+
+@mixin md-up {
+  @media (min-width: 768px) { @content; }
 }
 
-#contact-icons p {
-  margin-top: 1em;
-  font-size: 1.1rem;
-  text-align: center;
-  font-weight: 400;
+@mixin lg-up {
+  @media (min-width: 1024px) { @content; }
 }
 
-#contact-section {
-  width: 90%;
-  max-width: 34em;
-  margin: 1.5em auto;
-  background-color: rgba(255,255,255,0.56);
+.contact-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  text-align: center;
+  margin: auto;
+  max-width: 1500px;
+  padding: $base-spacing*2 $base-spacing $base-spacing;
+}
+
+section.contact-section {
+  background-color: $color-greyish;
+  width: 100%;
+  color: white;
   border-radius: 4px;
-}
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  padding: $base-spacing*1.5 $base-spacing $base-spacing;
+  margin-right: $base-spacing;
 
-.contact {
-  font-size: 1.1em;
-  margin-top: 1em;
-  p {
-  line-height: 2em;
-  font-weight: 400;
-  letter-spacing: 2px;
+  .contact-info {
+    width: 60%;
+
+    h1 {
+      font-weight: bold;
+    }
+
+    .contact {
+      padding: $base-spacing 0;
+      line-height: 2;
+    }
   }
-}
 
-#contact-heading {
-  margin-top: 2em;
-  font-weight: 400;
+  .contact-hours {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .hours {
+      padding: $base-spacing 0 0;
+
+      .hour {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.5;
+      }
+    }
+  }
 }
 
 #map {
-  width: 92%;
-  height: 17em;
-  margin: 0 auto;
-  margin-top: 1.5em;
-  margin-bottom: -1em;
-  background-color: gray;
+  height: 500px;
+  width: 100%;
   border-radius: 4px;
+  margin: auto;
 }
 
-.contact-hour-section {
-  margin-top: 0em;
-}
 
-.contact-hours {
-  margin-top: 1em;
-}
+.form {
+  // width: 50%;
+  margin: auto;
+  max-width: 1500px;
+  height: auto;
+  background: $color-light-internal;
+  border-radius:4px;
+  box-shadow:0 0 40px -10px #000;
+  padding: $base-spacing;
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative;
+    h2 {
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color: #333;
+    border-bottom:2px solid #333;
+  }
+  .form-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-.hours {
-  margin-bottom: .75em;
   p {
-    font-size: 1.2em;
-    letter-spacing: 3px;
-  }
-  h3 {
-    font-weight: 400;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #contact-section {
-    width: 92%;
-    max-width: 92%;
-    margin: 0 auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: center;
-    font-size: 1.1em;
-    padding-top: 2em;
-    line-height: 2em;
-    p {
-      font-weight: 400;
-    }
-  }
-
-  #map {
-    width: 50%;
-    height: 29em;
-    margin-top: 0em;
-    margin-left: auto;
-  }
-
-  .contact-section2 {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .contact-hour-section {
-    width: 46%;
-    max-width: 22em;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid rgba(0,0,0,0.79);
-    line-height: 2.5em;
-    #contact-heading {
-      margin-top: 1em;
-    }
-  }
-
-  .contact-hours {
-    padding-top: 1em;
-    h3 {
-      font-weight: 400;
-    }
-    p {
-      font-weight: 400;
-      font-size: 1.1em;
-    }
-  }
-
-  .hours {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1em;
-  }
-
-  #contact-icons {
-    margin-top: 2em;
-    background-color: transparent;
-  }
-
-  #contact-heading {
-    margin-top: 2em;
-    font-weight: 400;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #contact-section {
-    width: 82%;
-    margin: 0 auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: center;
-    font-size: 1.1em;
-    padding-top: 2em;
-    line-height: 3em;
-    p {
-      font-weight: 400;
-    }
-  }
-
-  #map {
     width: 48%;
-    max-width: 40em;
-    height: 27.3em;
-    margin-left: auto;
+    input {
+      opacity: 1;
+      position: relative;
+      z-index: 10;
+      width:100%;
+      padding:10px;
+      box-sizing:border-box;
+      background:none;
+      background-color: rgba(255,255,255,0.3);
+      outline:none;
+      margin-top: $base-spacing/2;
+      resize:none;
+      border:0;
+      font-family:'Montserrat',sans-serif;
+      transition:all .3s;
+    }
+    input:focus {
+      background-color: darken($color-light-internal, 20%);
+    }
+    input:hover {
+      background-color: darken($color-light-internal, 20%);
+    }
+  }
+    p:before {
+      content:attr(type);
+      display:block;
+      margin:28px 0 0;
+      font-size:14px;
+      color: #333;
+    }
   }
 
-  .contact-section2 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4em;
+  #email {
+    width: 60%;
   }
 
-  .contact-hour-section {
-    width: 44%;
-    max-width: 27em;
-    margin-left: -2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid rgba(0,0,0,0.79);
-    line-height: 2.5em;
+  #message {
+    width: 100%;
+
+    input {
+      padding-bottom: 4em;
+    }
+  }
+
+  button {
+    float:right;
+    padding: $base-spacing/3 $base-spacing/1.5;
+    margin: $base-spacing 0 0;
     border-radius: 4px;
-    #contact-heading {
-      margin-top: 0em;
-    }
+    font-family:'Montserrat',sans-serif;
+    border:1px solid #333;
+    background:0;
+    color: #333;
+    cursor:pointer;
+    transition:all .3s;
   }
-
-  .contact-hours {
-    h3 {
-      font-weight: 400;
-    }
-    p {
-      font-weight: 400;
-      font-size: 1.1em;
-    }
-  }
-
-  .hours {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #contact-icons {
-    margin-top: 2em;
-    background-color: transparent;
-  }
-
-  #contact-heading {
-    margin-top: 2em;
-    font-weight: 400;
+  button:hover {
+    background: #333;
+    color:#fff;
   }
 }
-
-
-
 
 
 

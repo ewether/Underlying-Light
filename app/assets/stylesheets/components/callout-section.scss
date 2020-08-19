@@ -17,10 +17,10 @@ $color-greyish: rgba(139, 157, 163, 1);
 section.callout-section {
   width: 100%;
   color: white;
+  background-color: $color-greyish;
 
   .callout-container {
     padding: $base-spacing*2 $base-spacing;
-    background-color: $color-greyish;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
