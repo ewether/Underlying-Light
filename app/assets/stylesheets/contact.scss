@@ -2,6 +2,7 @@ $base-spacing: 2em;
 $color-dark: rgba(11, 11, 11, 0.825);
 $color-solid-dark: rgba(20, 20, 20, 1);
 $color-light: rgba(255,255,255,0.9);
+$color-light-solid: rgba(250,250,250, 1);
 $color-light-internal: rgba(255,255,255,0.8);
 $color-mid-light: rgba(255,255,255,0.55);
 $color-greyish: rgba(139, 157, 163, 1);
@@ -14,78 +15,200 @@ $color-greyish: rgba(139, 157, 163, 1);
   @media (min-width: 1024px) { @content; }
 }
 
+@mixin xl-up {
+  @media (min-width: 1440px) { @content; }
+}
+
+.contact-banner {
+  height: 50vh;
+  color: $color-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(60, 60, 60, 0.2), rgba(80, 80, 80, 0.2)), url(oil.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  h1 {
+    font-weight: bold;
+    font-size: 3em;
+  }
+}
+
 .contact-wrapper {
   display: flex;
   margin: auto;
   max-width: 1500px;
   padding: $base-spacing*2 $base-spacing $base-spacing;
+
+  @include md-up {
+    padding: $base-spacing*2 $base-spacing*2 $base-spacing;
+  }
 }
 
 section.contact-section {
-  background-color: $color-greyish;
   width: 100%;
   color: white;
   border-radius: 4px;
   display: flex;
-  // flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
-  padding: $base-spacing*1.5 $base-spacing $base-spacing;
-  margin-right: $base-spacing;
+  padding: $base-spacing*1.5 0 $base-spacing;
+
+  @include md-up {
+    padding: $base-spacing*2 $base-spacing $base-spacing;
+  }
+
+  @include lg-up {
+    flex-direction: row;
+    padding: $base-spacing*1.5 $base-spacing*1.5 $base-spacing;
+  }
+
+  @include xl-up {
+    flex-direction: row;
+    padding: $base-spacing*1.5 $base-spacing*3 $base-spacing;
+  }
+
+  .contact-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: $base-spacing*1.5;
+
+    @include md-up {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: $base-spacing*3;
+      width: 100%;
+    }
+
+    @include lg-up {
+      width: 34%;
+      margin-top: 0;
+      justify-content: unset;
+      flex-direction: column;
+    }
+  }
 
   .contact-info {
-    width: 60%;
+    margin-bottom: $base-spacing*3;
+    width: 100%;
+
+    @include md-up {
+      margin-top: -$base-spacing;
+      margin-bottom: unset;
+      width: 45%;
+    }
+
+    @include lg-up {
+      width: unset;
+      margin-top: 0;
+    }
 
     h1 {
       font-weight: bold;
     }
 
     .contact {
-      padding: $base-spacing 0;
+      padding: 0;
       line-height: 2;
+      font-size: 1.1em;
+
+      i {
+        font-size: 1.25em;
+        position: relative;
+        top: 2px;
+        margin-right: .2em;
+        color: darken($color-greyish, 20%);
+      }
     }
   }
 
   .contact-hours {
-    width: 40%;
+    margin-top: -$base-spacing*1.5;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+
+    @include md-up {
+      margin-top: -$base-spacing*1.5;
+      width: 50%;
+    }
+
+    @include lg-up {
+      width: unset;
+      margin-top: $base-spacing*2;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 33%;
+      background-color: darken($color-greyish, 20%);
+
+      @include md-up {
+        display: none;
+      }
+
+      @include lg-up {
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: 14%;
+        background-color: darken($color-greyish, 20%);
+      }
+    }
 
     h2 {
       font-weight: bold;
+      margin-top: $base-spacing/2;
     }
 
     .hours {
-      padding: $base-spacing 0 0;
+      padding: $base-spacing/1.5 0 0;
 
       .hour {
         display: flex;
         justify-content: space-between;
         line-height: 1.5;
+
+        h3 {
+          font-weight: bold;
+        }
       }
     }
   }
 }
 
 #map {
-  height: 500px;
+  height: 400px;
   width: 100%;
-  border-radius: 4px;
   margin: auto;
+  margin-top: $base-spacing/1.5;
 }
 
 
 .form {
-  // width: 50%;
-  margin: auto;
+  width: 100%;
+  margin-top: -9em;
   max-width: 1500px;
   height: auto;
-  background: $color-light-internal;
+  background: $color-light-solid;
   border-radius:4px;
   box-shadow:0 0 40px -10px #000;
   padding: $base-spacing;
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
   position:relative;
+
+  @include lg-up {
+    width: 60%;
+  }
+
     h2 {
     margin:10px 0;
     padding-bottom:10px;
@@ -108,7 +231,7 @@ section.contact-section {
       padding:10px;
       box-sizing:border-box;
       background:none;
-      background-color: rgba(255,255,255,0.3);
+      background-color: rgba(255,255,255,0.9);
       outline:none;
       margin-top: $base-spacing/2;
       resize:none;
@@ -140,7 +263,7 @@ section.contact-section {
     width: 100%;
 
     input {
-      padding-bottom: 4em;
+      padding-bottom: 8em;
     }
   }
 
@@ -162,7 +285,9 @@ section.contact-section {
   }
 }
 
-
+.callout-section {
+  background-color: darken($color-greyish, 10%) !important;
+}
 
 
 

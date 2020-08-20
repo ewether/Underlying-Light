@@ -1,8 +1,10 @@
 $base-spacing: 2em;
 $color-dark: rgba(11, 11, 11, 0.825);
-$color-solid-dark: rgba(30, 30, 30, 1);
+$color-solid-dark: rgba(20, 20, 20, 1);
+// $color-solid-dark: rgba(30, 30, 30, 1);
 $color-light: rgba(255,255,255,0.9);
 $color-mid-light: rgba(255,255,255,0.55);
+$color-greyish: rgba(139, 157, 163, 1);
 
 @mixin md-up {
   @media (min-width: 768px) { @content; }
@@ -41,7 +43,7 @@ body {
   width: 100%;
   min-height: 100%;
   height: 100%;
-  background-color: rgba(118, 130, 136, 1);
+  background-color: $color-greyish;
 }
 
 .home {
