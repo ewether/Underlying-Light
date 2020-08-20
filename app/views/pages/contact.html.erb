@@ -10,7 +10,7 @@
 <body>
 
   <div class="container">
-    <div class="about-background">
+    <div class="contact-background">
       <nav class="page-nav">
         <a href="/"><img class="page-logo" src="assets/white-plant.png" alt="pic"></a>
         <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
@@ -36,16 +36,36 @@
         </div>
       </nav>
 
+      <header class="contact-banner">
+        <h1>Contact</h1>
+      </header>
+
       <div class="contact-wrapper">
         <section class="contact-section">
+
+      <form class="form">
+        <h2>Contact Us</h2>
+        <div class="form-body">
+          <p type="First name:"><input placeholder="First name"></input></p>
+          <p type="Last name:"><input placeholder="Last name"></input></p>
+          <p type="Email:" id="email"><input placeholder="example@example.com"></input></p>
+          <p type="Message:" id="message"><input type="text" placeholder="What would you like to tell us.."></input></p>
+        </div>
+        <button>Send Message</button>
+      </form>
+
+
+      <div class="contact-flex-wrapper">
+
           <div class="contact-info">
-            <h1>Contact</h1>
+            <!-- <h1>Contact</h1> -->
               <div class="contact">
                 <p><i class="fas fa-map-marker-alt"></i> Lake Orion, Michigan 48360</p>
                 <p><i class="fas fa-phone"></i> (222)222-2222</i></p>
                 <p><i class="fas fa-envelope"></i> ewether@gmail.com</p>
             </div>
           </div>
+
 
           <div class="contact-hours">
             <h2>Hours</h2>
@@ -59,23 +79,12 @@
               <div class="hour"><h3>Sunday</h3> <p>CLOSED</p></div>
             </div>
           </div>
-
-          <div id="map"></div>
+        </div>
       </section>
-
 
     </div>
 
-      <form class="form">
-        <h2>Contact Us</h2>
-        <div class="form-body">
-          <p type="First name:"><input placeholder="First name"></input></p>
-          <p type="Last name:"><input placeholder="Last name"></input></p>
-          <p type="Email:" id="email"><input placeholder="example@example.com"></input></p>
-          <p type="Message:" id="message"><input type="text" placeholder="What would you like to tell us.."></input></p>
-        </div>
-        <button>Send Message</button>
-      </form>
+    <div id="map"></div>
 
       <section class="callout-section">
         <div class="callout-container">
