@@ -25,7 +25,7 @@ $color-greyish: rgba(139, 157, 163, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(60, 60, 60, 0.2), rgba(80, 80, 80, 0.2)), url(oil.jpg);
+  background-image: linear-gradient(rgba(60, 60, 60, 0.3), rgba(42, 54, 59, 0.65)), url(oil.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -155,10 +155,11 @@ section.contact-section {
       }
 
       @include lg-up {
+        display: block;
         position: absolute;
         content: '';
         height: 4px;
-        width: 14%;
+        width: 11%;
         background-color: darken($color-greyish, 20%);
       }
     }
@@ -199,7 +200,7 @@ section.contact-section {
   height: auto;
   background: $color-light-solid;
   border-radius:4px;
-  box-shadow:0 0 40px -10px #000;
+  box-shadow:0 0 40px -10px #333;
   padding: $base-spacing;
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
@@ -237,7 +238,7 @@ section.contact-section {
       resize:none;
       border:0;
       font-family:'Montserrat',sans-serif;
-      transition:all .3s;
+      transition: all .3s;
     }
     input:focus {
       background-color: darken($color-light-internal, 20%);
