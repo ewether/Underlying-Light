@@ -14,6 +14,10 @@ $color-greyish: rgba(139, 157, 163, 1);
   @media (min-width: 1024px) { @content; }
 }
 
+@mixin xl-up {
+  @media (min-width: 1440px) { @content; }
+}
+
 html {
   height: 100%;
 }
@@ -22,60 +26,117 @@ body {
   height: 100%;
 }
 
+.pricing-banner {
+  height: 50vh;
+  color: $color-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), url(massage4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  h1 {
+    font-weight: bold;
+    font-size: 3em;
+  }
+}
+
+.pricing-background {
+  background-color: darken($color-greyish, 15%);
+}
+
 section.pricing-section {
   height: 100%;
   width: 100%;
   display: flex;
-  padding: $base-spacing*2;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: $base-spacing $base-spacing;
   flex-direction: column;
 
-    @include md-up {
-      background-color: transparent;
-      width: 90%;
-      margin: 0 auto;
-      margin-top: 2em;
-      margin-bottom: .5em;
-      flex-direction: row;
-    }
-    @include lg-up {
+  @include md-up {
+    background-color: transparent;
+    width: 100%;
+    padding: $base-spacing $base-spacing*1.5;
+    margin-top: $base-spacing;
+    margin-bottom: .5em;
+    flex-direction: row;
+  }
+  @include lg-up {
+    padding: $base-spacing $base-spacing*2;
+    width: 100%;
+    max-width: 1500px;
+  }
+  @include xl-up {
+    padding: $base-spacing $base-spacing*3;
+  }
+
+  .pricing-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 25%;
+    margin-top: -$base-spacing*4;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .pricing-image {
+      height: 210px;
       width: 100%;
-      max-width: 1500px;
+      box-shadow:0 0 40px -10px #333;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
 
+    .image1 {
+      background-image: linear-gradient(rgba(220, 220, 220, 0.0), rgba(220, 220, 220, 0.0)), url(deep-tissue.jpg);
+    }
+    .image2 {
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(220, 220, 220, 0.1)), url(face-massage.jpg);
+    }
+    .image3 {
+      background-image: linear-gradient(rgba(220, 220, 220, 0.1), rgba(220, 220, 220, 0.0)), url(oil.jpg);
+    }
+    .image4 {
+      background-image: linear-gradient(rgba(220, 220, 220, 0.1), rgba(220, 220, 220, 0.0)), url(massage3.jpg);
+    }
+  }
+
   .pricing {
-    width: 45%;
-    margin-left: $base-spacing;
+    width: 70%;
     border-radius: 4px;
     background-color: darken($color-greyish, 15%);
-    padding: $base-spacing*2 $base-spacing;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: white;
+    margin-top: $base-spacing/2;
 
     h1 {
       width: 100%;
-      margin-bottom: $base-spacing/1.5;
-      font-size: 30px;
+      margin-bottom: $base-spacing;
+      font-size: 2em;
       text-align: center;
       font-weight: bold;
     }
 
     .pricing-options {
       display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
+      justify-content: space-between;
 
       #pricing-opt-2 {
-        border-top: 2px solid $color-light;
-        border-bottom: 2px solid $color-light;
-        padding: $base-spacing 0;
+        border-left: 2px solid $color-light;
+        border-right: 2px solid $color-light;
+        padding: 0 $base-spacing;
+        width: 34%;
       }
 
       .pricing-opt {
+        width: 30%;
         h2 {
-          margin-bottom: $base-spacing/1.5;
+          margin-bottom: $base-spacing/1.25;
         }
 
         .pricing-time {
@@ -89,18 +150,11 @@ section.pricing-section {
 }
 
 .accordion {
-  // width: 55%;
-  color: white;
+  width: 68%;
+  color: $color-light;
   border-radius: 4px;
   overflow: hidden;
-}
-
-.tab-heading {
-  width: 100%;
-  font-size: 30px;
-  padding-top: $base-spacing;
-  text-align: center;
-  background-color: $color-greyish;
+  margin-top: -$base-spacing*12;
 }
 
 input {
@@ -120,12 +174,14 @@ input {
 }
 
 .tab-label {
-  background-color: $color-greyish;
+  background-color: $color-dark;
   padding: $base-spacing*3 0;
+  transition: all .3s;
+  font-size: 1.1em;
 }
 
 .tab-content {
-  background-color: $color-greyish;
+  background-color: $color-dark;
 }
 
 .tab {
@@ -134,7 +190,7 @@ input {
   &-label {
     display: flex;
     justify-content: space-between;
-    padding: $base-spacing*1.25;
+    padding: $base-spacing*1.5;
     font-weight: bold;
     cursor: pointer;
     &:hover {
@@ -145,6 +201,7 @@ input {
       height: 1em;
       text-align: center;
       transition: all .2s;
+      font-size: 1.15em;
     }
   }
   &-content {
@@ -176,7 +233,7 @@ input:checked {
 }
 
 .tab-label:hover {
-  background-color: rgba(0,0,0,0.75);
+  background-color: darken($color-dark, 2%);
 }
 
 
