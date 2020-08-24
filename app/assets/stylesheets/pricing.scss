@@ -6,6 +6,10 @@ $color-light-internal: rgba(255,255,255,0.8);
 $color-mid-light: rgba(255,255,255,0.55);
 $color-greyish: rgba(139, 157, 163, 1);
 
+@mixin sm-dwn {
+  @media (max-width: 460px) { @content; }
+}
+
 @mixin md-up {
   @media (min-width: 768px) { @content; }
 }
@@ -53,39 +57,37 @@ section.pricing-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: $base-spacing $base-spacing;
+  background-color: darken($color-greyish, 15%);
   flex-direction: column;
 
   @include md-up {
-    background-color: transparent;
     width: 100%;
-    padding: $base-spacing $base-spacing*1.5;
     margin-top: $base-spacing;
-    margin-bottom: .5em;
-    flex-direction: row;
   }
+
   @include lg-up {
-    padding: $base-spacing $base-spacing*2;
     width: 100%;
     max-width: 1500px;
-  }
-  @include xl-up {
-    padding: $base-spacing $base-spacing*3;
+    flex-direction: row;
   }
 
   .pricing-images {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 25%;
-    margin-top: -$base-spacing*4;
-    border-radius: 8px;
-    overflow: hidden;
+
+    @include lg-up {
+      width: 25%;
+      margin-top: -$base-spacing*12.25;
+      flex-wrap: wrap;
+    }
+
+    @include xl-up {
+      margin-top: -$base-spacing*11.5;
+    }
 
     .pricing-image {
-      height: 210px;
+      min-height: 210px;
       width: 100%;
-      box-shadow:0 0 40px -10px #333;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -106,43 +108,86 @@ section.pricing-section {
   }
 
   .pricing {
-    width: 70%;
-    border-radius: 4px;
-    background-color: darken($color-greyish, 15%);
+    width: 100%;
+    background-color: $color-greyish;
     display: flex;
     flex-direction: column;
     color: white;
-    margin-top: $base-spacing/2;
+    margin-top: -$base-spacing*2.5;
+    box-shadow:0 0 40px -10px #333;
+    padding: $base-spacing*2 $base-spacing;
+
+    @include lg-up {
+      width: 75%;
+      border-radius: 4px;
+      padding: $base-spacing*2.5;
+    }
 
     h1 {
-      width: 100%;
       margin-bottom: $base-spacing;
+      width: 100%;
       font-size: 2em;
       text-align: center;
       font-weight: bold;
+
+      @include md-up {
+        margin-bottom: $base-spacing;
+      }
     }
 
     .pricing-options {
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
+      margin: auto;
+      width: 400px;
+
+      @include sm-dwn {
+        width: 100%;
+      }
+
+      @include md-up {
+        flex-direction: row;
+        width: unset;
+        margin: unset;
+      }
 
       #pricing-opt-2 {
-        border-left: 2px solid $color-light;
-        border-right: 2px solid $color-light;
-        padding: 0 $base-spacing;
-        width: 34%;
+        width: 100%;
+
+        @include md-up {
+          border-left: 2px solid $color-light;
+          border-right: 2px solid $color-light;
+          padding: 0 $base-spacing/2;
+          margin: 0 $base-spacing/2;
+        }
+
+        @include lg-up {
+          width: 34%;
+          padding: 0 $base-spacing;
+          border-left: 2px solid $color-light;
+          border-right: 2px solid $color-light;
+        }
       }
 
       .pricing-opt {
-        width: 30%;
+        width: 100%;
+        max-width: 400px;
+
         h2 {
           margin-bottom: $base-spacing/1.25;
+          font-weight: bold;
+        }
+
+        @include lg-up {
+          width: 30%;
         }
 
         .pricing-time {
           display: flex;
           justify-content: space-between;
           margin-bottom: $base-spacing/1.5;
+          max-width: 500px;
         }
       }
     }
@@ -150,11 +195,14 @@ section.pricing-section {
 }
 
 .accordion {
-  width: 68%;
   color: $color-light;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-top: -$base-spacing*12;
+
+  @include lg-up {
+    width: 65%;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: auto;
+  }
 }
 
 input {
