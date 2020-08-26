@@ -43,8 +43,7 @@ section.callout-section {
         }
       }
       button {
-        background-color: $color-dark;
-        color: white;
+        background-color: $color-light;
         border: transparent;
         border-radius: 4px;
         font-size: 1.2em;
@@ -54,9 +53,6 @@ section.callout-section {
         text-transform: capitalize;
         @include md-up() {
           margin-top: 1.5em;
-          color: black;
-          background-color: $color-light;
-          border-color: transparent;
           font-weight: 400;
           letter-spacing: 2px;
           transform: scale(1);
