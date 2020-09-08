@@ -12,8 +12,14 @@
   <div class="container">
     <div class="about-background">
       <nav class="page-nav">
-        <a href="/"><img class="page-logo" src="assets/white-plant.png" alt="pic"></a>
-        <a href="/" class="white-plant"><img class="white-plant" src="assets/white-plant.png" alt="pic"></a>
+        <a href="/">
+          <%= image_tag "white-plant.png", alt: "white plant logo", class: "page-logo" %>
+          <!-- <img class="page-logo" src="assets/white-plant.png" alt="pic"> -->
+        </a>
+        <a href="/" class="white-plant">
+          <%= image_tag "white-plant.png", alt: "white plant logo", class: "page-logo" %>
+          <!-- <img class="white-plant" src="assets/white-plant.png" alt="pic"> -->
+        </a>
         <a href="/" class="name-logo"><h2 class="name-logo" id="page-name-logo">Underlying Light</h2></a>
           <ul class="nav-links" id="page-nav-links">
             <li>
@@ -135,7 +141,10 @@
         <div class="main-footer-content">
 
           <div class="footer-logo">
-              <a href="/"><img src="assets/logo.png" alt="pic"></a>
+              <a href="/">
+                <%= image_tag "logo.png", alt: "logo" %>
+                <!-- <img src="assets/logo.png" alt="pic"> -->
+              </a>
               <!-- <p>Nulla pellentesque dignissim enim sit.</p> -->
           </div>
 
