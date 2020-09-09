@@ -3,5 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1"
   }
 }
