@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
   <title>Contact</title>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -382,7 +383,8 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGdISCeOWf4Fp9TLdeeA-x-X7e1qunU04&callback=initMap">
             </script>
 
-  <%= javascript_pack_tag 'nav.js' %>
+  <%= render "pages.js/nav.js" %>
+  <%#= javascript_pack_tag 'nav.js' %>
   <!-- <script src="assets/pages.js/nav.js"></script> -->
 </body>
 </html>
