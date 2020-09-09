@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
   <title>Pricing</title>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -195,8 +196,10 @@
       </div>
     </div>
 
-  <%= javascript_pack_tag 'nav.js' %>
-  <%= javascript_pack_tag 'accordion.js' %>
+  <%= render "pages.js/nav.js" %>
+  <%#= javascript_pack_tag 'nav.js' %>
+  <%= render "pages.js/accordion.js" %>
+  <%#= javascript_pack_tag 'accordion.js' %>
   <!-- <script src="assets/pages.js/nav.js"></script> -->
   <!-- <script src="assets/pages.js/accordion.js"></script> -->
 </body>

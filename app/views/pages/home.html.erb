@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
   <title>Underlying Light</title>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -194,7 +195,7 @@
     </div>
   </div>
 
-  <%= javascript_pack_tag 'nav.js' %>
+  <%= render "pages.js/nav.js" %>
   <!-- <script src="assets/pages.js/nav.js"></script> -->
 </body>
 </html>
