@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), url(about.jpg);
+  background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), asset-url('about.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -164,7 +164,7 @@ section.about-section {
     }
 
     .aside-image {
-      background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), url(highlight2.jpg);
+      background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), asset-url('highlight2.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -210,7 +210,7 @@ section.about-section {
 .about-image-banner {
   height: 175px;
   width: 100%;
-  background-image: linear-gradient(rgba(42, 54, 59, 0.2), rgba(42, 54, 59, 0.5)), url(crystal.jpg);
+  background-image: linear-gradient(rgba(42, 54, 59, 0.2), rgba(42, 54, 59, 0.5)), asset-url('crystal.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
