@@ -17,7 +17,7 @@ section.offset-section {
   height: auto;
   width: 100%;
   color: white;
-  background-image: linear-gradient(rgba(27, 35, 37, 0.7), rgba(20, 20, 20, 0.7)), url(/assets/massage2.jpg);
+  background-image: linear-gradient(rgba(27, 35, 37, 0.7), rgba(20, 20, 20, 0.7)), asset-url('massage2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

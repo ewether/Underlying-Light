@@ -77,7 +77,7 @@ section.callout-section {
         max-width: 350px;
         padding: $base-spacing;
         background-color: $color-greyish;
-        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/deep-tissue.jpg);
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), asset-url('deep-tissue.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -87,15 +87,15 @@ section.callout-section {
       }
 
       #callout-card-1 {
-        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight1.jpg);
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), asset-url('highlight1.jpg');
       }
 
       #callout-card-3 {
-        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight2.jpg);
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), asset-url('highlight2.jpg');
       }
 
       #callout-card-4 {
-        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/oil.jpg);
+        background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), asset-url('oil.jpg');
       }
     }
   }
