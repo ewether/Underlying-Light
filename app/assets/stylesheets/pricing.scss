@@ -30,6 +30,17 @@ body {
   height: 100%;
 }
 
+.page-header span {
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0;
+  transition: all 1.5s ease;
+  font-weight: bold;
+}
+
+span.fade {
+  opacity: 1;
+}
+
 .pricing-banner {
   height: 50vh;
   color: $color-light;

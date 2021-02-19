@@ -50,6 +50,12 @@ $color-greyish: rgba(139, 157, 163, 1);
     background-color: $color-solid-dark;
     text-decoration: none;
     list-style-type: none;
+    &:hover {
+      // transform: scale(1) translateZ(0);
+      transform: translateY(-.25px) scale(1.0005) translateZ(0);
+      box-shadow: 0 6px 14px rgba(20,20,20,0.2), 0 6px 14px rgba(20,20,20,0.2);
+      background-color: lighten($color-solid-dark, .5%);
+    }
   }
 
   h2 {

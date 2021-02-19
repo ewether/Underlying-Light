@@ -206,11 +206,39 @@ body {
   }
 }
 
-.active {
-  border-bottom: 1px solid $color-light;
-  padding-bottom: .5em;
-  color: black;
+.stroke ul li a,
+.stroke ul li a:after,
+.stroke ul li a:before {
+  transition: all .4s;
 }
+
+.stroke ul li a {
+  // position: relative;
+  line-height: 32px;
+}
+
+.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+// .active {
+//   border-bottom: 1px solid $color-light;
+//   padding-bottom: .5em;
+//   color: black;
+// }
 
 .white-logo {
   display: flex;
@@ -399,11 +427,11 @@ body {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.nav-links a:hover {
-  @include md-up() {
-    border-bottom: 1px solid $color-light;
-  }
-}
+// .nav-links a:hover {
+//   @include md-up() {
+//     border-bottom: 1px solid $color-light;
+//   }
+// }
 
 .background {
   @include md-up() {
@@ -428,6 +456,16 @@ body {
     width: 24em;
     height: 2.5em;
   }
+}
+
+.heading-two span {
+  font-family: 'Averia Serif Libre';
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+span.fade {
+  opacity: 1;
 }
 
 .book-btn:hover {
