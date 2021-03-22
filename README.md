@@ -20,7 +20,3 @@ Ruby on Rails
     <td><img src="https://github.com/ewether/Underlying-Light/blob/master/app/assets/images/screenshots/massage%20contact.png" width="300px"></td>
   </tr>
 </table>
-
-## Motivation
-
-This app solidified my knowledge of React and helped me learn CRUD.
