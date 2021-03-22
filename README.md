@@ -1,24 +1,10 @@
-# README
+# Underlying Light
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Underlying Light is a fully responsive massage therapy website template. The website features four unique page layouts and has a calming feel overall.
 
-Things you may want to cover:
+## Screenshots
+![Image description](link-to-image)
 
-* Ruby version
+## Motivation
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app solidified my knowledge of React and helped me learn CRUD.
