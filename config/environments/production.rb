@@ -31,6 +31,10 @@ Rails.application.configure do
 
   config.assets.compress = true
 
+  config.serve_static_assets = true
+
+  config.assets.digest = true
+
   config.assets.precompile += ['nav.js']
 
   config.assets.precompile += ['accordion.js']
