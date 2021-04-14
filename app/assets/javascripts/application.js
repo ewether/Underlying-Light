@@ -12,5 +12,5 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+g//= require_tree .
 import "./javascripts/application.css"
