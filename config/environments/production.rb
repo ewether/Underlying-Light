@@ -40,7 +40,7 @@ Rails.application.configure do
   config.assets.precompile += ['accordion.js']
 
   # config.assets.initialize_on_precompile = false
-g
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
