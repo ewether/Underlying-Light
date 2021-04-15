@@ -47,6 +47,8 @@ gem "rack", ">= 2.2.3"
 
 gem "actionview", ">= 5.2.4.3"
 
+gem 'webpacker', '>= 5.x'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

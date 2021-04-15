@@ -1,0 +1,1973 @@
+/* line 17, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+html {
+  height: 100%;
+}
+
+/* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+body {
+  height: 100%;
+}
+
+/* line 25, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+.about-banner {
+  height: 50vh;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), url(/assets/about-4b87a8d29dc1ecfb2deccba4c14038a83a8d66dfc478de9b32e2eeab0d425e45.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 36, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+.about-banner h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* line 42, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+.about-background {
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* line 52, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+.page-logo {
+  display: flex;
+  justify-content: center;
+  height: 7em;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+/* line 58, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+.page-logo img {
+  height: 9em;
+}
+@media (min-width: 768px) {
+  /* line 52, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+  .page-logo {
+    display: none;
+  }
+}
+
+/* line 66, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+.page-nav {
+  height: auto;
+  width: 100%;
+  padding-bottom: 1.3333333333em;
+  background-color: #141414;
+}
+@media (min-width: 768px) {
+  /* line 66, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+  .page-nav {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    padding: 1em;
+  }
+}
+
+/* line 83, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+#page-burger {
+  margin-top: -1.2em;
+  position: absolute;
+  right: 0;
+}
+
+/* line 89, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 89, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+  section.about-section {
+    flex-direction: row;
+  }
+}
+/* line 98, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0;
+  order: 1;
+}
+@media (min-width: 768px) {
+  /* line 98, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+  section.about-section .about-right {
+    order: unset;
+    width: 70%;
+    margin-top: -2em;
+    border-top-left-radius: 4px;
+    overflow: hidden;
+  }
+}
+/* line 113, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-right .about-blurb {
+  height: auto;
+  padding: 2em 2em;
+  text-align: center;
+  background-color: #8b9da3;
+  color: white;
+  font-size: .9em;
+}
+/* line 121, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-right .about-blurb h2 span {
+  font-size: 1.25em;
+}
+/* line 126, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-right .about {
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fafafa;
+  width: 100%;
+  color: #333;
+  padding: 5em 2em 4em;
+}
+/* line 133, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-right .about h1 {
+  font-weight: 400;
+  font-size: 1.75em;
+}
+/* line 137, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-right .about p {
+  padding: 3em 0 0;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.5em;
+}
+@media (min-width: 768px) {
+  /* line 126, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+  section.about-section .about-right .about {
+    padding: 5em 2em 8em;
+    border-top-right-radius: 0px;
+  }
+}
+/* line 150, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #64777e;
+  color: white;
+  line-height: 1.5;
+  order: 2;
+}
+@media (min-width: 768px) {
+  /* line 150, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+  section.about-section .about-aside {
+    max-width: 450px;
+    order: unset;
+    width: 30%;
+  }
+}
+/* line 166, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .aside-image {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), url(/assets/highlight2-315c002cb3f861ff77e6e94b177159e608d15e66d3f28ad6279c730d32a29865.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 4px;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 200px;
+}
+/* line 177, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .about-contact {
+  border-top: 2px solid rgba(255, 255, 255, 0.9);
+}
+/* line 180, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .about-contact .contact-content {
+  padding: 3em 0 0;
+}
+/* line 183, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .about-contact h3 {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+/* line 189, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .about-services {
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+}
+/* line 193, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .about-services .services-content {
+  padding: 2em 0 3em;
+}
+/* line 196, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .about-services .services-content .service {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+/* line 202, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-section .about-aside .about-services h3 {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+/* line 210, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+.about-image-banner {
+  height: 175px;
+  width: 100%;
+  background-image: linear-gradient(rgba(42, 54, 59, 0.2), rgba(42, 54, 59, 0.5)), url(/assets/crystal-f9cf6e0b0150851c13b33aa1e9bedc2a8a7c56abe680d0569e55f059e17039ca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 219, /Users/user/code/ewether/massage/app/assets/stylesheets/about.scss */
+section.about-callout {
+  background-color: #64777e !important;
+}
+/* line 17, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section {
+  width: 100%;
+  color: white;
+  background-color: #8b9da3;
+}
+/* line 22, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container {
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  /* line 22, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+  section.callout-section .callout-container {
+    padding: 8em 0 4em;
+  }
+}
+/* line 32, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-body {
+  text-align: center;
+}
+/* line 35, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-body h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+}
+/* line 39, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-body h2 span {
+  font-size: 1.4em;
+  margin: 0.5em 0 1em;
+}
+/* line 45, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-body button {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: transparent;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 1em 2em;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  /* line 45, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+  section.callout-section .callout-container .callout-body button {
+    margin-top: 1.5em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transform: scale(1);
+    transition: .1s ease-in-out;
+  }
+}
+/* line 63, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-cards {
+  padding-top: 4em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  /* line 63, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+  section.callout-section .callout-container .callout-cards {
+    padding-top: 8em;
+    justify-content: space-evenly;
+  }
+}
+/* line 74, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-cards .callout-card {
+  height: 12em;
+  width: 50%;
+  max-width: 350px;
+  padding: 2em;
+  background-color: #8b9da3;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/deep-tissue-068060ac630c917a532203b076dee6ff6e76d9a01f31404630c4617881a07cf8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (min-width: 768px) {
+  /* line 74, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+  section.callout-section .callout-container .callout-cards .callout-card {
+    width: 22%;
+  }
+}
+/* line 89, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-cards #callout-card-1 {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight1-5b8ccb77cbc8ae153ae64e9cfdca9fc789ea6c346938573945af94c7cd6012a8.jpg);
+}
+/* line 93, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-cards #callout-card-3 {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/highlight2-315c002cb3f861ff77e6e94b177159e608d15e66d3f28ad6279c730d32a29865.jpg);
+}
+/* line 97, /Users/user/code/ewether/massage/app/assets/stylesheets/components/callout-section.scss */
+section.callout-section .callout-container .callout-cards #callout-card-4 {
+  background-image: linear-gradient(rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/oil-17508f4de4e5031ea464d4178dabe3a6b14a9eb8bf6545095f7c08ee6e63a89d.jpg);
+}
+/* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  /* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards {
+    padding: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards {
+    padding: 0;
+  }
+}
+/* line 37, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards .card {
+  padding: 1.6em 2em;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 550px;
+  color: white;
+  margin: auto;
+  margin-bottom: 1em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #141414;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* line 53, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards .card:hover {
+  transform: translateY(-0.25px) scale(1.0005) translateZ(0);
+  box-shadow: 0 6px 14px rgba(20, 20, 20, 0.2), 0 6px 14px rgba(20, 20, 20, 0.2);
+  background-color: #151515;
+}
+/* line 61, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0 0 0.6666666667em;
+}
+/* line 68, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards p {
+  font-weight: 300;
+  font-size: .95em;
+  padding: 0 0 1em;
+}
+/* line 74, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards .card-img {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  /* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards {
+    flex-wrap: wrap;
+  }
+  /* line 81, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards .card {
+    width: 48.25%;
+    margin: 0.3333333333em;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+  /* line 92, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards .card {
+    width: 32%;
+  }
+}
+/* line 97, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards .card-four {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 97, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards .card-four {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 97, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+  .home-cards .card-four {
+    display: none;
+  }
+}
+/* line 108, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards .card-four h2 {
+  margin-bottom: 1.3333333333em;
+  font-size: 1.4em;
+}
+/* line 113, /Users/user/code/ewether/massage/app/assets/stylesheets/components/cards.scss */
+.home-cards .card-four p {
+  padding-bottom: 0.6666666667em;
+  font-size: 1.1em;
+}
+/* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer {
+  background-color: #141414;
+  color: white;
+  height: auto;
+}
+/* line 26, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer .main-footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2em 2em 0;
+  font-size: 14px;
+}
+@media (min-width: 640px) {
+  /* line 26, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+  footer.footer .main-footer-content {
+    padding: 3em 2em 1em;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 768px) {
+  /* line 26, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+  footer.footer .main-footer-content {
+    padding-bottom: 1.3333333333em;
+  }
+}
+/* line 42, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer .main-footer-content .footer-logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* line 47, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer .main-footer-content .footer-logo img {
+  height: 110px;
+}
+@media (min-width: 768px) {
+  /* line 47, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+  footer.footer .main-footer-content .footer-logo img {
+    height: 120px;
+  }
+}
+@media (min-width: 640px) {
+  /* line 42, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+  footer.footer .main-footer-content .footer-logo {
+    flex-wrap: unset;
+    width: 35%;
+  }
+}
+/* line 61, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer .main-footer-content .footer-links {
+  width: 100%;
+  text-align: center;
+  line-height: 1.75;
+  margin-bottom: 1.3333333333em;
+}
+@media (min-width: 640px) {
+  /* line 61, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+  footer.footer .main-footer-content .footer-links {
+    margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 640px) {
+  /* line 71, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+  footer.footer .main-footer-content .footer-links ul {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 630px;
+  }
+}
+/* line 80, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer .main-footer-content .footer-links ul li {
+  list-style-type: none;
+}
+/* line 83, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer .main-footer-content .footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 92, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+footer.footer .footer-copyright {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 0.8em;
+}
+@media (min-width: 768px) {
+  /* line 92, /Users/user/code/ewether/massage/app/assets/stylesheets/components/footer.scss */
+  footer.footer .footer-copyright {
+    padding-bottom: 1em;
+  }
+}
+/* line 16, /Users/user/code/ewether/massage/app/assets/stylesheets/components/highlight-cards.scss */
+section.highlight-cards {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: 4em 0;
+  color: white;
+}
+/* line 23, /Users/user/code/ewether/massage/app/assets/stylesheets/components/highlight-cards.scss */
+section.highlight-cards h2 {
+  font-size: 2em;
+}
+/* line 27, /Users/user/code/ewether/massage/app/assets/stylesheets/components/highlight-cards.scss */
+section.highlight-cards .highlight-body {
+  display: flex;
+}
+/* line 32, /Users/user/code/ewether/massage/app/assets/stylesheets/components/highlight-cards.scss */
+section.highlight-cards .highlight-body .highlight-card {
+  height: 40vh;
+  width: 33.3%;
+  background-color: #8b9da3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 16, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section {
+  height: auto;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(rgba(27, 35, 37, 0.7), rgba(20, 20, 20, 0.7)), url(/assets/massage2-a871041a903283819aea2c24bd01831f5b314a2e5415f995a5b6f13832180df7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  padding: 2em 2em;
+}
+@media (min-width: 768px) {
+  /* line 16, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+  section.offset-section {
+    padding: 4em 4em;
+  }
+}
+/* line 30, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container {
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  /* line 30, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+  section.offset-section .offset-container {
+    flex-direction: row;
+    text-align: left;
+    width: 85%;
+  }
+}
+/* line 47, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container .offset-body {
+  width: 100%;
+  align-self: flex-start;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  /* line 47, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+  section.offset-section .offset-container .offset-body {
+    padding: 0 2em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 47, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+  section.offset-section .offset-container .offset-body {
+    width: 55%;
+  }
+}
+/* line 58, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container .offset-body h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+/* line 64, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container .offset-body h2 span {
+  font-size: 1.9em;
+  font-weight: 200;
+}
+/* line 70, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container .offset-body p {
+  margin-top: 2em;
+  line-height: 1.4em;
+}
+/* line 75, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container .offset-body button {
+  margin-top: 4em;
+  width: auto;
+  padding: 0 2em;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+/* line 87, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container button:hover {
+  background-color: rgba(230, 230, 230, 0.9);
+  cursor: pointer;
+}
+/* line 92, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container .offset-image {
+  width: 80%;
+  margin-bottom: 2em;
+}
+@media (min-width: 768px) {
+  /* line 92, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+  section.offset-section .offset-container .offset-image {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 92, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+  section.offset-section .offset-container .offset-image {
+    width: 43%;
+  }
+}
+/* line 102, /Users/user/code/ewether/massage/app/assets/stylesheets/components/offset-section.scss */
+section.offset-section .offset-container .offset-image img {
+  width: 100%;
+}
+/* line 16, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+section.testimonial {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  background-color: #8b9da3;
+  color: white;
+  padding: 3em 2em;
+}
+@media (min-width: 768px) {
+  /* line 16, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+  section.testimonial {
+    padding: 3em 2em 5em;
+    max-width: unset;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 16, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+  section.testimonial {
+    padding: 10em 2em;
+  }
+}
+/* line 31, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+section.testimonial h2 {
+  margin: 0 auto 1em;
+  font-size: 1.5em;
+  max-width: 1550px;
+}
+@media (min-width: 1024px) {
+  /* line 31, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+  section.testimonial h2 {
+    font-size: 2em;
+  }
+}
+/* line 40, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+section.testimonial .testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 1550px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  /* line 40, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+  section.testimonial .testimonial-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+/* line 51, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+section.testimonial .testimonial-cards .testimonial-card {
+  padding: 2em 0;
+}
+/* line 53, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+section.testimonial .testimonial-cards .testimonial-card:last-of-type {
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  /* line 51, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+  section.testimonial .testimonial-cards .testimonial-card {
+    width: 46%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 51, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+  section.testimonial .testimonial-cards .testimonial-card {
+    width: 30%;
+  }
+}
+/* line 64, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+section.testimonial .testimonial-cards .testimonial-card:before {
+  height: 4px;
+  width: 7em;
+  margin-bottom: 2em;
+  background-color: rgba(255, 255, 255, 0.9);
+  content: "";
+  display: block;
+}
+/* line 73, /Users/user/code/ewether/massage/app/assets/stylesheets/components/testimonial.scss */
+section.testimonial .testimonial-cards h3 {
+  font-weight: bold;
+  margin-top: 0.8em;
+  letter-spacing: 1px;
+}
+/* line 22, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.contact-banner {
+  height: 50vh;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(60, 60, 60, 0.3), rgba(42, 54, 59, 0.65)), url(/assets/oil-17508f4de4e5031ea464d4178dabe3a6b14a9eb8bf6545095f7c08ee6e63a89d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 33, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.contact-banner h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* line 39, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.contact-wrapper {
+  display: flex;
+  margin: auto;
+  max-width: 1500px;
+  padding: 4em 2em 2em;
+}
+@media (min-width: 768px) {
+  /* line 39, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  .contact-wrapper {
+    padding: 4em 4em 2em;
+  }
+}
+
+/* line 50, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section {
+  width: 100%;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3em 0 2em;
+}
+@media (min-width: 768px) {
+  /* line 50, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section {
+    padding: 4em 2em 2em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 50, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section {
+    flex-direction: row;
+    padding: 3em 3em 2em;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 50, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section {
+    flex-direction: row;
+    padding: 3em 6em 2em;
+  }
+}
+/* line 74, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 3em;
+}
+@media (min-width: 768px) {
+  /* line 74, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-flex-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6em;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 74, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-flex-wrapper {
+    width: 34%;
+    margin-top: 0;
+    justify-content: unset;
+    flex-direction: column;
+  }
+}
+/* line 95, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-info {
+  margin-bottom: 6em;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 95, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-info {
+    margin-top: -2em;
+    margin-bottom: unset;
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 95, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-info {
+    width: unset;
+    margin-top: 0;
+  }
+}
+/* line 110, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-info h1 {
+  font-weight: bold;
+}
+/* line 114, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-info .contact {
+  padding: 0;
+  line-height: 2;
+  font-size: 1.1em;
+}
+/* line 119, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-info .contact i {
+  font-size: 1.25em;
+  position: relative;
+  top: 2px;
+  margin-right: .2em;
+  color: #586a70;
+}
+/* line 129, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-hours {
+  margin-top: -3em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  /* line 129, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-hours {
+    margin-top: -3em;
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 129, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-hours {
+    width: unset;
+    margin-top: 4em;
+  }
+}
+/* line 146, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-hours:before {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 33%;
+  background-color: #586a70;
+}
+@media (min-width: 768px) {
+  /* line 146, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-hours:before {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 146, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  section.contact-section .contact-hours:before {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 11%;
+    background-color: #586a70;
+  }
+}
+/* line 167, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-hours h2 {
+  font-weight: bold;
+  margin-top: 1em;
+}
+/* line 172, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-hours .hours {
+  padding: 1.3333333333em 0 0;
+}
+/* line 175, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-hours .hours .hour {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+/* line 180, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+section.contact-section .contact-hours .hours .hour h3 {
+  font-weight: bold;
+}
+
+/* line 188, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+#map {
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  margin-top: 1.3333333333em;
+}
+
+/* line 196, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form {
+  width: 100%;
+  margin-top: -9em;
+  max-width: 1500px;
+  height: auto;
+  background: #fafafa;
+  border-radius: 4px;
+  box-shadow: 0 0 40px -10px #333;
+  padding: 2em;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  /* line 196, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+  .form {
+    width: 60%;
+  }
+}
+/* line 213, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+/* line 220, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form .form-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 225, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form .form-body p {
+  width: 48%;
+}
+/* line 227, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form .form-body p input {
+  opacity: 1;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  outline: none;
+  margin-top: 1em;
+  resize: none;
+  border: 0;
+  font-family: 'Montserrat',sans-serif;
+  transition: all .3s;
+}
+/* line 243, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form .form-body p input:focus {
+  background-color: rgba(204, 204, 204, 0.8);
+}
+/* line 246, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form .form-body p input:hover {
+  background-color: rgba(204, 204, 204, 0.8);
+}
+/* line 250, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form .form-body p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #333;
+}
+/* line 259, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form #email {
+  width: 60%;
+}
+/* line 263, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form #message {
+  width: 100%;
+}
+/* line 266, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form #message input {
+  padding-bottom: 8em;
+}
+/* line 271, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form button {
+  float: right;
+  padding: 0.6666666667em 1.3333333333em;
+  margin: 2em 0 0;
+  border-radius: 4px;
+  font-family: 'Montserrat',sans-serif;
+  border: 1px solid #333;
+  background: 0;
+  color: #333;
+  cursor: pointer;
+  transition: all .3s;
+}
+/* line 283, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.form button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* line 289, /Users/user/code/ewether/massage/app/assets/stylesheets/contact.scss */
+.callout-section {
+  background-color: #6f858c !important;
+}
+/* line 17, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+button {
+  text-transform: capitalize;
+}
+
+/* line 21, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* line 30, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+html {
+  height: 100%;
+}
+
+/* line 34, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+body {
+  height: 100%;
+}
+
+/* line 38, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.container {
+  position: relative;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background-color: #8b9da3;
+}
+
+/* line 49, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(180, 190, 194, 0.1), rgba(18, 18, 18, 0.3)), url(/assets/massage-b0e6d4ecf5b7a6d861552682b7b7b06cfd290d460bab229b4f2e0da5d32fa7d1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (min-width: 1024px) {
+  /* line 49, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home {
+    height: 160vh;
+  }
+}
+
+/* line 61, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.mobile-home-section {
+  height: auto;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 550px;
+  margin: auto;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  /* line 61, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .mobile-home-section {
+    padding: 4em 0 3em;
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 61, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .mobile-home-section {
+    padding: 0;
+  }
+}
+
+/* line 79, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.mobile-section {
+  text-align: -webkit-center;
+}
+@media (min-width: 768px) {
+  /* line 79, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .mobile-section {
+    display: none;
+  }
+}
+
+/* line 86, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home-section {
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  /* line 86, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home-section {
+    width: 100%;
+    margin-left: 0em;
+    margin-top: 0;
+    background-color: transparent;
+    justify-content: normal;
+  }
+}
+
+/* line 101, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home-main-section {
+  height: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* line 108, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home-main-section h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+/* line 113, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home-main-section p {
+  width: 96%;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0em 1em;
+}
+@media (min-width: 768px) {
+  /* line 101, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home-main-section {
+    height: 100%;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 101, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home-main-section {
+    height: auto;
+    padding: 9em 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* line 136, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home-nav {
+  height: auto;
+  width: 100%;
+  padding-bottom: 1.3333333333em;
+  background-color: #141414;
+}
+@media (min-width: 768px) {
+  /* line 136, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home-nav {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    padding: 1em;
+  }
+}
+
+/* line 153, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 850px;
+  height: 45vh;
+  margin-top: 1em;
+  margin-right: 2em;
+  position: absolute;
+  background-color: #141414;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translateX(200%);
+  transition: transform 0.5s ease-in;
+}
+/* line 167, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.nav-links li {
+  list-style-type: none;
+  opacity: 0;
+  margin-right: 2.5em;
+}
+/* line 172, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+@media (min-width: 768px) {
+  /* line 153, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .nav-links {
+    background-color: #141414;
+    margin-top: 0;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    position: inherit;
+    transform: translateX(0%);
+    background-color: transparent;
+  }
+  /* line 188, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .nav-links li {
+    opacity: 1;
+    padding-left: 0.5em;
+    transform: scale(1);
+  }
+  /* line 193, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .nav-links a {
+    font-size: 1em;
+    padding-bottom: .5em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 153, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .nav-links {
+    width: 60%;
+    max-width: 720px;
+    padding-left: 2em;
+  }
+  /* line 202, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .nav-links li {
+    transition: .1s ease-in-out;
+  }
+}
+
+/* line 209, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.stroke ul li a,
+.stroke ul li a:after,
+.stroke ul li a:before {
+  transition: all .4s;
+}
+
+/* line 215, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.stroke ul li a {
+  line-height: 32px;
+}
+
+/* line 220, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+/* line 233, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+/* line 243, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.white-logo {
+  display: flex;
+  justify-content: center;
+}
+/* line 246, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.white-logo img {
+  margin-top: 1.2em;
+  height: 9em;
+}
+@media (min-width: 768px) {
+  /* line 243, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .white-logo {
+    display: none;
+  }
+}
+
+/* line 255, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.name-logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 255, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .name-logo {
+    font-family: 'Averia Serif Libre';
+    color: white;
+    margin-left: -.55em;
+    margin-right: auto;
+    display: flex;
+    width: 16em;
+    align-self: center;
+    text-decoration: none;
+  }
+}
+
+/* line 269, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.white-plant {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 269, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .white-plant {
+    display: block;
+    height: 2.8em;
+    align-self: center;
+    margin-left: 2em;
+    margin-bottom: .7em;
+  }
+}
+
+/* line 280, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.laptop-logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 280, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .laptop-logo {
+    display: block;
+    height: 12em;
+    margin-left: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 280, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .laptop-logo {
+    display: block;
+    height: 16em;
+    margin-left: 1em;
+  }
+}
+
+/* line 294, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.heading-two {
+  display: none;
+}
+
+/* line 298, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.burger {
+  display: block;
+  text-align: -webkit-right;
+  margin-right: 1em;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  /* line 298, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .burger {
+    display: none;
+  }
+}
+
+/* line 308, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* line 316, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 11em;
+}
+@media (min-width: 768px) {
+  /* line 316, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home-contact {
+    display: none;
+  }
+}
+
+/* line 326, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.home-border {
+  margin-top: 2em;
+  margin-bottom: .5em;
+  width: 80%;
+  max-width: 20em;
+  border-bottom: 1px solid black;
+}
+@media (min-width: 768px) {
+  /* line 326, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home-border {
+    display: none;
+  }
+}
+
+/* line 337, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.book-btn {
+  background-color: #141414;
+  color: white;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 400;
+  height: 3em;
+  width: 100%;
+  padding: 0 1em;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  /* line 337, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .book-btn {
+    margin-top: 1.5em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: transparent;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 16em;
+    height: 2.8em;
+    transform: scale(1);
+    transition: .1s ease-in-out;
+  }
+}
+
+/* line 364, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.contact-icons p {
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+}
+/* line 370, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.contact-icons h2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 363, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .contact-icons {
+    background-color: rgba(255, 255, 255, 0.55);
+    height: 30em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 380, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .contact-icons h2 {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 363, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .contact-icons {
+    background-color: rgba(255, 255, 255, 0.55);
+    height: 30em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 394, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .contact-icons h2 {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+}
+
+/* line 403, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/* line 418, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+/* line 422, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.toggle .line2 {
+  opacity: 0;
+}
+
+/* line 426, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (min-width: 768px) {
+  /* line 436, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .background {
+    height: 76em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 442, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .heading-two {
+    width: 20em;
+    height: 2em;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.9);
+    text-align: center;
+    display: block;
+    font-family: 'Averia Serif Libre';
+    margin-top: .25em;
+    font-size: 1.25em;
+    letter-spacing: 3px;
+    color: white;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 442, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .heading-two {
+    width: 24em;
+    height: 2.5em;
+  }
+}
+
+/* line 461, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.heading-two span {
+  font-family: 'Averia Serif Libre';
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+/* line 467, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+span.fade {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  /* line 471, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .book-btn:hover {
+    background-color: rgba(230, 230, 230, 0.9);
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 477, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .linebreak {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 483, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .home-linebreak {
+    width: 36%;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    border: 0.5px solid rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* line 492, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+.pre-footer {
+  height: 30vh;
+  background-image: linear-gradient(rgba(213, 229, 234, 0.5), rgba(139, 157, 163, 0.9)), url(/assets/prefooter-c8345a256862aed852aeda0344e98a1977adf5f274800c05392f42f8517c7469.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  /* line 500, /Users/user/code/ewether/massage/app/assets/stylesheets/pages.scss */
+  .card-section {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+/* line 25, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+html {
+  height: 100%;
+}
+
+/* line 29, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+body {
+  height: 100%;
+}
+
+/* line 33, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.page-header span {
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0;
+  transition: all 1.5s ease;
+  font-weight: bold;
+}
+
+/* line 40, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+span.fade {
+  opacity: 1;
+}
+
+/* line 44, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.pricing-banner {
+  height: 50vh;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.15), rgba(42, 54, 59, 0.6)), url(/assets/massage4-2aef1dd9b5532963d200ea480859790236d6f078611b2b5ee8d2a532be953f1e.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 55, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.pricing-banner h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* line 61, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.pricing-background {
+  background-color: #64777e;
+}
+
+/* line 65, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #64777e;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  /* line 65, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section {
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 65, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section {
+    width: 100%;
+    max-width: 1500px;
+    flex-direction: row;
+  }
+}
+/* line 85, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing-images {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  /* line 85, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing-images {
+    width: 25%;
+    margin-top: -24.5em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 85, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing-images {
+    margin-top: -23em;
+  }
+}
+/* line 99, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing-images .pricing-image {
+  min-height: 210px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 107, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing-images .image1 {
+  background-image: linear-gradient(rgba(220, 220, 220, 0), rgba(220, 220, 220, 0)), url(/assets/deep-tissue-068060ac630c917a532203b076dee6ff6e76d9a01f31404630c4617881a07cf8.jpg);
+}
+/* line 110, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing-images .image2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(220, 220, 220, 0.1)), url(/assets/face-massage-c355731d0efc2e90663b5571ede6cde22c85afe770dd36996095358953952fab.jpg);
+}
+/* line 113, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing-images .image3 {
+  background-image: linear-gradient(rgba(220, 220, 220, 0.1), rgba(220, 220, 220, 0)), url(/assets/oil-17508f4de4e5031ea464d4178dabe3a6b14a9eb8bf6545095f7c08ee6e63a89d.jpg);
+}
+/* line 116, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing-images .image4 {
+  background-image: linear-gradient(rgba(220, 220, 220, 0.1), rgba(220, 220, 220, 0)), url(/assets/massage3-603ecbd2c630c4bdd794ae388a558825c976ce1e826961bcd25735a6fc36d24b.jpg);
+}
+/* line 121, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing {
+  width: 100%;
+  background-color: #8b9da3;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: -5em;
+  box-shadow: 0 0 40px -10px #333;
+  padding: 4em 2em;
+}
+@media (min-width: 1024px) {
+  /* line 121, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing {
+    width: 75%;
+    border-radius: 4px;
+    padding: 5em;
+  }
+}
+/* line 137, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing h1 {
+  margin-bottom: 2em;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  /* line 137, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing h1 {
+    margin-bottom: 2em;
+  }
+}
+/* line 149, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing .pricing-options {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: auto;
+  width: 400px;
+}
+@media (max-width: 460px) {
+  /* line 149, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing .pricing-options {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 149, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing .pricing-options {
+    flex-direction: row;
+    width: unset;
+    margin: unset;
+  }
+}
+/* line 166, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing .pricing-options #pricing-opt-2 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 166, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing .pricing-options #pricing-opt-2 {
+    border-left: 2px solid rgba(255, 255, 255, 0.9);
+    border-right: 2px solid rgba(255, 255, 255, 0.9);
+    padding: 0 1em;
+    margin: 0 1em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 166, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing .pricing-options #pricing-opt-2 {
+    width: 34%;
+    padding: 0 2em;
+    border-left: 2px solid rgba(255, 255, 255, 0.9);
+    border-right: 2px solid rgba(255, 255, 255, 0.9);
+  }
+}
+/* line 184, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing .pricing-options .pricing-opt {
+  width: 100%;
+  max-width: 400px;
+}
+/* line 188, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing .pricing-options .pricing-opt h2 {
+  margin-bottom: 1.6em;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  /* line 184, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  section.pricing-section .pricing .pricing-options .pricing-opt {
+    width: 30%;
+  }
+}
+/* line 197, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+section.pricing-section .pricing .pricing-options .pricing-opt .pricing-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.3333333333em;
+  max-width: 500px;
+}
+
+/* line 208, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.accordion {
+  color: rgba(255, 255, 255, 0.9);
+}
+@media (min-width: 1024px) {
+  /* line 208, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+  .accordion {
+    width: 65%;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: auto;
+  }
+}
+
+/* line 219, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* line 225, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.row {
+  display: flex;
+}
+/* line 227, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.row .col {
+  flex: 1;
+}
+/* line 229, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.row .col:last-child {
+  margin-left: 1em;
+}
+
+/* line 235, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab-label {
+  background-color: rgba(11, 11, 11, 0.825);
+  padding: 6em 0;
+  transition: all .3s;
+  font-size: 1.1em;
+}
+
+/* line 242, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab-content {
+  background-color: rgba(11, 11, 11, 0.825);
+}
+
+/* line 246, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 249, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 257, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all .2s;
+  font-size: 1.15em;
+}
+/* line 266, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  transition: all .2s;
+}
+/* line 271, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: .75em;
+  cursor: pointer;
+}
+
+/* line 284, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+/* line 288, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+input:checked ~ .tab-content {
+  max-height: 100em;
+  padding: 3em 1em;
+}
+
+/* line 294, /Users/user/code/ewether/massage/app/assets/stylesheets/pricing.scss */
+.tab-label:hover {
+  background-color: rgba(6, 6, 6, 0.825);
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
