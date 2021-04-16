@@ -37,7 +37,13 @@ Rails.application.configure do
 
   config.assets.precompile += ['nav.js']
 
+  config.assets.precompile += ['app.js']
+
+  config.assets.precompile += ['cable.js']
+
   config.assets.precompile += ['accordion.js']
+
+  config.assets.precompile += ['page.js']
 
   # config.assets.initialize_on_precompile = false
 

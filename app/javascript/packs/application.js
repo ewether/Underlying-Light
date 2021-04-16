@@ -15,10 +15,19 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-//= require("packs/app")
-//= require("packs/nav") 
-//= require ("packs/accordion.js")
-//= require ("packs/page.js")
+require("src/app")
+require("src/nav") 
+require ("src/accordion")
+require ("src/page")
+
+// import "../src/accordion";
+// import "../src/app";
+// import "../src/cable";
+// import "../src/nav";
+// import "../src/page";
+// import "../src/pages.coffee";
+
+
 
 //= require_tree .
 
