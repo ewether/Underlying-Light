@@ -10,6 +10,11 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # Rails.application.config.assets.precompile += %w( application.js )
 
+Rails.application.config.assets.precompile += %w(page.js)
+Rails.application.config.assets.precompile += %w(app.js)
+Rails.application.config.assets.precompile += %w(accordion.js)
+Rails.application.config.assets.precompile += %w(nav.js)
+
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
