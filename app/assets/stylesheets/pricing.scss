@@ -70,6 +70,7 @@ section.pricing-section {
   justify-content: space-between;
   background-color: darken($color-greyish, 15%);
   flex-direction: column;
+  margin-top: 75px;
 
   @include md-up {
     width: 100%;
