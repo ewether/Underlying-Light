@@ -47,6 +47,9 @@ gem "rack", ">= 2.2.3"
 
 gem "actionview", ">= 5.2.4.3"
 
+gem 'sprockets', '~> 3'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
